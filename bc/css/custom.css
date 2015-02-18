@@ -1,0 +1,161 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,900,100,300);
+
+body{
+	background:#f4f5f7;
+	padding-top:80px;
+	font-family: "Roboto", sans-serif;
+}
+
+.navbar{
+	background:#3b5063;
+}
+
+.navbar-default .navbar-brand{
+	color:#EFEFEF;
+}
+
+.navbar-brand{
+	background:url(../img/logos.png) no-repeat 10px 5px;
+	background-color: #060a0d;
+	text-indent: -99999px;
+	width:50px;
+	border-right: 1px solid #2f4254;
+	transition: all 0.7s ease 0s;  
+}
+
+.navbar-brand:hover{
+	background:url(../img/logos.png) no-repeat -100px 5px;
+	width:150px;
+	transition: all 0.7s ease 0s;
+}
+
+.navbar-brand, .navbar-nav > li > a{
+	text-shadow:none;
+}
+
+.resume{
+	margin:20px;
+	box-shadow: 0 0 2px 0px #ececec;
+	background: #FFF;
+	border-radius: 5px;
+	padding:10px;
+	color:#666;
+}
+	.resume h2{
+		margin: 0;
+		line-height: 100%;
+		font-weight: 900;
+		padding-bottom: 10px;
+		margin-bottom: 5px;
+		border-bottom:1px solid #ececec;
+	}
+	.resume small{
+		color:#666;
+		margin-top: 10px;
+		text-transform: uppercase;
+		line-height: 140%;
+		padding-top: 5px;
+	}
+
+
+#trigger{
+	position: absolute;
+	z-index:9;
+	top:57px;
+	left:35px;
+}
+
+#sidebar-wrapper{
+	z-index: 99;
+	width:250px;
+	padding:10px;
+	height: 92%;
+	position:absolute;
+	top:50px;
+	left:-300px;
+	background: #e5d59b;
+	background: #e6dab1;
+	transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper.active{
+	left:0;
+	box-shadow: 0 0 10px 2px #999;	
+	transition: all 0.4s ease 0s;	
+}
+
+
+	ul.sidebar-nav li > a{
+		color:#fff;
+	}
+
+.logout{
+	color:#6a737a;
+	border-left:1px solid #2f4254;
+	padding:15px 30px;
+	transition: all 0.4s ease 0s;
+}
+
+.logout:hover{
+	background:#060a0d;
+	color:#dfac16;
+	text-decoration: none;
+	transition: all 0.4s ease 0s;
+}
+
+.dp{
+	width:230px !important;
+	text-align: left !important;
+}
+
+.caret{
+	margin-top: 9px;
+}
+#sidebar-wrapper .btn-default{
+	width:100%;
+}
+
+#collapse{
+	padding:5px;
+	margin-bottom: 30px;
+	width:100%;
+	color:#cdbc80;
+}
+
+form{
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #cdbc80;
+}
+.table{
+	background: #FFF;
+	border-radius: 5px;
+	box-shadow: 0 0 2px 0px #ececec;
+}
+
+.table-responsive{
+	margin:10px 20px;
+}
+
+body.login{
+	background:#3b5063;
+}
+
+.login-form{
+	background:#FFF;
+	padding:10px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 0 #333;
+}
+
+.login-form form{
+	border-top:1px solid #ededed;
+}
+
+.login-form form > .form-group{
+	margin:25px 0;
+}
+
+.login-form form h1{
+	margin:0px 0 30px 0;
+}
