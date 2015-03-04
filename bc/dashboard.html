@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Banana Cash</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/animate.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top wow fadeInDown" role="navigation">
+			<a href="#" class="pull-right logout">Log out  <i class="fa fa-sign-out"></i></a>
+			<a class="navbar-brand" href="#">Banana Cash</a>
+		</nav>
+			<div id="wrapper">
+
+			<div id="sidebar-wrapper">
+				<div class="text-right">
+			    	<a href="#menu" id="collapse" class="text-right"><i class="fa fa-caret-left fa-lg"></i></a>
+			    </div>
+				<form class="" action="">
+					<div class="form-group">
+						<div class="btn-group">
+							<label class="control-label clearfix" for="universidad">Universidad</label><br/>
+							<button type="button" class="btn btn-default dropdown-toggle dp" data-toggle="dropdown" aria-expanded="false"><span class="caret pull-right"></span>Seleccione...
+							</button>
+							<ul class="dropdown-menu" role="menu">
+							    <li><a href="#">Universidad 1</a></li>
+							    <li><a href="#">Universidad 2</a></li>
+							    <li><a href="#">Universidad 3</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="btn-group">
+							<label class="control-label" for="universidad">Facultad</label><br/>
+							<button type="button" class="btn btn-default dropdown-toggle dp" data-toggle="dropdown" aria-expanded="false"><span class="caret pull-right"></span>Seleccione...
+							</button>
+							<ul class="dropdown-menu" role="menu">
+							    <li><a href="#">Facultad 1</a></li>
+							    <li><a href="#">Facultad 2</a></li>
+							    <li><a href="#">Facultad 3</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<button type="submit" class="btn btn-primary" id="filter-btn">Filtrar</button>
+
+				</form>
+			</div>
+
+			<a href="#filtro" id="trigger" class="btn btn-default wow fadeIn"><i class="fa fa-filter"></i></a>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
+						<div class="resume text-center">
+							<h2>12,345,678</h2>
+							<small>Ventas ($)</small>
+						</div>
+					</div>
+
+					<div class="col-md-4 wow fadeIn" data-wow-delay="1s">
+						<div class="resume text-center">
+							<h2>200</h2>
+							<small>Vendedores</small>
+						</div>
+					</div>
+					
+					<div class="col-md-4 wow fadeIn" data-wow-delay="1.5s">
+						<div class="resume text-center">
+							<h2>22,000</h2>
+							<small>Entradas Vendidas</small>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="table-responsive wow fadeIn" data-wow-delay="2s">
+					<table class="table table-stripped">
+						<thead>
+							<tr>
+								<th>Vendedor</th>
+								<th class="text-center">Universidad</th>
+								<th class="text-center">Facultad</th>
+								<th class="text-center">Venta ($)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Juan Perez</td>
+								<td class="text-center">PUC</td>
+								<td class="text-center">Leyes</td>
+								<td class="text-center">1.000</td>
+							</tr>
+							<tr>
+								<td>Juan Perez</td>
+								<td class="text-center">Universidad de Chile</td>
+								<td class="text-center">Ingeniería</td>
+								<td class="text-center">2.000</td>
+							</tr>
+							<tr>
+								<td>Juan Perez</td>
+								<td class="text-center">PUC</td>
+								<td class="text-center">Leyes</td>
+								<td class="text-center">1.000</td>
+							</tr>
+							<tr>
+								<td>Juan Perez</td>
+								<td class="text-center">Universidad de Chile</td>
+								<td class="text-center">Ingeniería</td>
+								<td class="text-center">2.000</td>
+							</tr>
+							<tr>
+								<td>Juan Perez</td>
+								<td class="text-center">PUC</td>
+								<td class="text-center">Leyes</td>
+								<td class="text-center">1.000</td>
+							</tr>
+							<tr>
+								<td>Juan Perez</td>
+								<td class="text-center">Universidad de Chile</td>
+								<td class="text-center">Ingeniería</td>
+								<td class="text-center">2.000</td>
+							</tr>
+							<tr>
+								<td>Juan Perez</td>
+								<td class="text-center">PUC</td>
+								<td class="text-center">Leyes</td>
+								<td class="text-center">1.000</td>
+							</tr>
+							<tr>
+								<td>Juan Perez</td>
+								<td class="text-center">Universidad de Chile</td>
+								<td class="text-center">Ingeniería</td>
+								<td class="text-center">2.000</td>
+							</tr>
+							<tr>
+								<td>Juan Perez</td>
+								<td class="text-center">PUC</td>
+								<td class="text-center">Leyes</td>
+								<td class="text-center">1.000</td>
+							</tr>
+							<tr>
+								<td>Juan Perez</td>
+								<td class="text-center">Universidad de Chile</td>
+								<td class="text-center">Ingeniería</td>
+								<td class="text-center">2.000</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script src="js/jquery.counterup.min.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/banana.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+			jQuery(document).ready(function( $ ) {
+				$('h2').counterUp({
+					delay: 10,
+					time: 2000 
+				});
+			});
+		</script>
+	</body>
+</html>
