@@ -1,0 +1,201 @@
+
+body{
+	padding-top:50px;
+	margin-top: 0;
+	height: 100%;
+}
+
+
+.navbar{
+	background:#3b5063;
+	margin-bottom:0;
+}
+
+.navbar-default .navbar-brand{
+	color:#EFEFEF;
+}
+
+.navbar-brand{
+	background:url(../img/logo-quierosushi.png) no-repeat 8px 7px;
+	background-color: #060a0d;
+	text-indent: -99999px;
+	width:50px;
+	border-right: 1px solid #2f4254;
+}
+
+
+.navbar-brand, .navbar-nav > li > a{
+	text-shadow:none;
+}
+
+.tit-section{
+	padding:12px 10px 10px 15px;
+	display: block;
+	margin-bottom:0;
+	height:;
+	width:auto;
+	color:#FFF;
+	font-size: 18px;
+	font-weight: 500;
+	float: left;
+}
+	
+
+.wrapper{
+	background: url(../img/grass.jpg) repeat-x left -20px;
+	height:630px;
+}
+
+.pasto{
+	background: url(../img/barras.png) repeat-x left 50px;
+	height:100%;
+}
+
+.barra-bottom{
+	height:116px;
+	background: url(../img/barra-bottom.png) repeat-x left top;
+	bottom:-10px;
+	z-index: 99;
+}
+
+.llegada{
+	width:25px;
+	margin-right: 30px;
+	height:520px;
+	background: url(../img/llegada.png) no-repeat center top;
+	z-index:1;
+	position: absolute;
+	right: 0;
+	top:175px;
+}
+
+
+.horse{
+	width:210px;
+	height:180px;
+	position:absolute;
+}
+
+#horse-1{
+	background: url(../img/andreina.png) no-repeat center center;
+	z-index:1;
+	top:10px;
+	left:0;
+}
+
+#horse-2{
+	background: url(../img/jose.png) no-repeat center center;
+	z-index:2;
+	top:100px;
+	left:0;
+}
+#horse-3{
+	background: url(../img/dani.png) no-repeat center center;
+	z-index:3;
+	top:200px;
+	left:0;
+}
+
+#horse-4{
+	background: url(../img/diego.png) no-repeat center center;
+	z-index:4;
+	top:300px;
+	left:0;
+}
+
+#horse-5{
+	background: url(../img/angel.png) no-repeat center center;
+	z-index:5;
+	top:400px;
+	left:0;
+}
+
+
+@media (min-width: 1281px) {
+	.wrapper{
+		height:750px;
+	}
+
+	.llegada{
+		height:580px;
+		top:180px;
+	}
+
+	#horse-1{
+		top:20px;
+	}
+
+	#horse-2{
+		top:130px;
+	}
+	#horse-3{
+		top:240px;
+	}
+
+	#horse-4{
+		top:350px;
+	}
+
+	#horse-5{
+		top:470px;
+	}
+	
+}
+
+
+@media (max-width: 321px){
+
+	.wrapper{
+		height:420px;
+	}
+
+	.pasto{
+		background: url(../img/barras-min.png) repeat-x left 50px;
+		height:100%;
+	}
+
+	.barra-bottom{
+		height:51px;
+		background: url(../img/barra-bottom-min.png) repeat-x left top;
+		bottom:0px;
+		z-index: 99;
+	}
+
+	.llegada{
+		background: url(../img/llegada-min.png) no-repeat center top;
+		top:140px;
+		height:340px;
+		margin-right: 5px;
+	}
+
+	.horse{
+		width:105px;
+		height:90px;
+		position:absolute;
+	}
+
+	#horse-1{
+		background: url(../img/andreina-min.png);
+		top:20px;
+	}
+
+	#horse-2{
+		background: url(../img/jose-min.png);
+		top:95px;
+	}
+	#horse-3{
+		background: url(../img/dani-min.png);
+		top:165px;
+	}
+
+	#horse-4{
+		background: url(../img/diego-min.png);
+		top:235px;
+	}
+
+	#horse-5{
+		background: url(../img/angel-min.png);
+		top:310px;
+	}
+
+}
