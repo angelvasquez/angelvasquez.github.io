@@ -296,3 +296,8 @@ form#create-cupon input[type=radio]{
 	.mb{
 		margin-bottom:30px;
 	}
+
+	.pager .next>a, .pager .previous>a{
+		float:none;
+		margin:10px;
+	}
