@@ -9,3 +9,6 @@ $('.form-control').datepicker({
     startDate: '-3d'
 });
 
+$(document).ready(function() {
+  	$('#rootwizard').bootstrapWizard({'tabClass': 'bwizard-steps'});
+});
