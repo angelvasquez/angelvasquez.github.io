@@ -198,6 +198,8 @@ form#create-cupon input[type=radio]{
 }
 
 
+
+
 /*wizard*/
 
 #rootwizard ul{
@@ -288,7 +290,7 @@ form#create-cupon input[type=radio]{
 			padding: 0;
 			background-color: transparent }
 	}
-
+	
 	.btn-add-min{
 		margin-bottom: 10px;
 	}
@@ -300,4 +302,19 @@ form#create-cupon input[type=radio]{
 	.pager .next>a, .pager .previous>a{
 		float:none;
 		margin:10px;
+		border-radius: 5px;
+		border-color:#999;
 	}
+
+	.subscat{
+		margin-top: 5px;
+		margin-bottom: 5px;
+		width:250px!important;
+	}
+	
+	.soft-caja{
+		margin-left: 15px;
+		width:300px;
+	}
+
+	

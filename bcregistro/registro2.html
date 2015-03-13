@@ -50,7 +50,7 @@
 
 									<div class="form-group">
 										<label for="rut">Rut</label>
-										<input type="text" id="rut">
+										<input type="text" id="rut" class="form-group">
 									</div>
 
 									<div class="form-group">
@@ -89,46 +89,13 @@
 
 				    <div class="tab-pane" id="tab2">
 				      <div class="row">
-				      			<div class="col-md-12 mb"><strong>El marketing será dirigido a todos los clientes que aplican a estas categorias.</strong></div>
-								<div class="col-md-3 register">
+				      			<div class="col-md-12 col-md-offset-1 mb"><strong>El marketing será dirigido a todos los clientes que aplican a estas categorias.</strong></div>
+								<div class="col-md-3 col-md-offset-1">
 									<div class="form-group">
-										<label for=""><input type="checkbox" id=""> Restaurantes</label>
-										<label for=""><input type="checkbox" id=""> Compras</label>
-										<label for=""><input type="checkbox" id=""> Comida</label>
-										<label for=""><input type="checkbox" id=""> Vida Nocturna</label>
-										<label for=""><input type="checkbox" id=""> Moda</label>
-										<label for=""><input type="checkbox" id=""> Bares</label>
-										<label for=""><input type="checkbox" id=""> Café y Té</label>
-										<label for=""><input type="checkbox" id=""> Pubs</label>
-										<label for=""><input type="checkbox" id=""> Belleza y Spas</label>
-									</div>
-								</div>
-
-								<div class="col-md-3 register">
-									<div class="form-group">
-										<label for=""><input type="checkbox" id=""> Servicios Locales</label>
-										<label for=""><input type="checkbox" id=""> Medicina y Salud</label>
-										<label for=""><input type="checkbox" id=""> Servicios Generales</label>
-										<label for=""><input type="checkbox" id=""> Vida Nocturna</label>
-										<label for=""><input type="checkbox" id=""> Automotriz</label>
-										<label for=""><input type="checkbox" id=""> Vida Activa</label>
-										<label for=""><input type="checkbox" id=""> Cultura y espectáculos</label>
-										<label for=""><input type="checkbox" id=""> Servicios Públicos</label>
-										<label for=""><input type="checkbox" id=""> Planificación de Eventos</label>
-									</div>
-								</div>
-
-								<div class="col-md-3 register">
-									<div class="form-group">
-										<label for=""><input type="checkbox" id=""> Hoteles y Viajes</label>
-										<label for=""><input type="checkbox" id=""> Enseñanza</label>
-										<label for=""><input type="checkbox" id=""> Único en la ciudad</label>
-										<label for=""><input type="checkbox" id=""> Máscotas</label>
-										<label for=""><input type="checkbox" id=""> Servicios Profesionales</label>
-										<label for=""><input type="checkbox" id=""> Organiaciones Religiosas</label>
-										<label for=""><input type="checkbox" id=""> Servicios Financieros</label>
-										<label for=""><input type="checkbox" id=""> Inmobiliarias</label>
-										<label for=""><input type="checkbox" id=""> Medios de Comunicación</label>
+										<label for="">Ingrese su categoría</label>
+										<input type="text" placeholder="Ej: Restaurant" class="subscat">
+										<p>Ejemplo de categoría > Subcategoría</p>
+										<p><a href="#">Agregar otra categoría</a></p>
 									</div>
 								</div>
 							</div>
@@ -195,7 +162,21 @@
 										</td>
 									</tr>
 									<tr>
-										<td>Contacto Contabilidad</td>
+										<td>Contacto TI</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="text-center">
+											<div class="btn-group btn-group-sm" role="group" aria-label="">
+  												<a href="#" data-toggle="modal" data-target="#contactos" class="btn btn-default"><i class="fa fa-pencil"></i></a>
+											  	<a href="#" type="button" class="btn btn-default"><i class="fa fa-trash"></i></a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Contacto Finanzas</td>
 										<td></td>
 										<td></td>
 										<td></td>
@@ -225,7 +206,8 @@
 									<thead>
 									<tr>
 										<th>Nombre Sucursal</th>
-										<th>Dirección</th>
+										<th>Dirección 1</th>
+										<th>Dirección 2</th>
 										<th>Comuna</th>
 										<th class="text-center">Teléfono</th>
 										<th class="text-center">Email</th>
@@ -238,6 +220,7 @@
 									</thead>
 									<tbody>
 									<tr>
+										<td></td>
 										<td></td>
 										<td></td>
 										<td></td>
@@ -262,8 +245,8 @@
 
 					<div class="tab-pane" id="tab5">
 						<div class="row">
-						<div class="col-md-12 mb"><strong>Seleccione los medios de pago existentes en su negocio.</strong></div>
-						<div class="col-md-12">
+						<div class="col-md-12 mb col-md-offset-1 "><strong>Seleccione los medios de pago existentes en su negocio.</strong></div>
+						<div class="col-md-10 col-md-offset-1 ">
 							<div class="form-group">
 								<label for="" class="pull-left lbl-services">Vende po Ecommerce</label>
 								<input type="checkbox" name="ecupon" id="" class="check selector" checked/>
@@ -271,7 +254,7 @@
 						</div>
 						</div>
 						<div class="row">
-						<div class="col-md-5 ">
+						<div class="col-md-3  col-md-offset-1 ">
 							<div class="form-group">
 								<label for=""><input type="checkbox" id=""> Tarjetas de Crédito</label>
 							</div>
@@ -309,22 +292,28 @@
 				    </div>
 					</div>
 					<div class="tab-pane" id="tab6">
-						<div class="form-group">
-								<label for=""><input type="checkbox" id=""> Boleta Manual</label>
+						<div class="row">
+							<div class="col-md-10 col-md-offset-1 ">
+								<div class="form-group">
+									<label for="r1"><input type="radio" id="r1" name="g1"> Boleta Manual</label>
+								</div>
+								<div class="form-group">
+									<label for="r2"><input type="radio" id="r2" name="g1"> Caja registradora</label>
+								</div>
+								<div class="form-group">
+									<label for="r3"><input type="radio" id="r3" name="g1"> Caja registradora integrada con POS</label>
+								</div>
+								<div class="form-group">
+									<label for=""><input type="checkbox" id=""> Lector código de barra</label>
+								</div>
+								<div class="form-group">
+									<label for=""><input type="checkbox" id=""> Software de Caja</label>
+									<p class="soft-caja"><input type="text" placeholder="ej: lalala" class=""></p>
+								</div>
 							</div>
-							<div class="form-group">
-								<label for=""><input type="checkbox" id=""> Caja registradora</label>
-							</div>
-							<div class="form-group">
-								<label for=""><input type="checkbox" id=""> Caja registradora integrada con POS</label>
-							</div>
-							<div class="form-group">
-								<label for=""><input type="checkbox" id=""> Lector código de barra</label>
-							</div>
-							<div class="form-group">
-								<label for=""><input type="checkbox" id="">Software de Caja</label>
-							</div>
+						</div>
 				    </div>
+
 					<ul class="pager wizard">
 						<li class="previous"><a href="#">Anterior</a></li>
 					  	<li class="next"><a href="#">Siguiente</a></li>
@@ -346,29 +335,28 @@
 		      <div class="modal-body">
 		       	<form action="" id=""  class="register">
 		       		<div class="form-group">
-										<label for="">Nombre de Contacto</label>
-										<input type="text" id="">
-									</div>
+						<label for="">Nombre de Contacto</label>
+							<input type="text" id="">
+						</div>
+						<div class="form-group">
+							<label for="">Cargo</label>
+							<input type="text" id="">
+						</div>
 
-									<div class="form-group">
-										<label for="">Cargo</label>
-										<input type="text" id="">
-									</div>
+						<div class="form-group">
+							<label for="">Email</label>
+							<input type="text" id="">
+						</div>
 
-									<div class="form-group">
-										<label for="">Email</label>
-										<input type="text" id="">
-									</div>
+						<div class="form-group">
+							<label for="">Teléfono Fijo</label>
+							<input type="text" id="">
+						</div>
 
-									<div class="form-group">
-										<label for="">Teléfono Fijo</label>
-										<input type="text" id="">
-									</div>
-
-									<div class="form-group">
-										<label for="">Teléfono Móvil</label>
-										<input type="text" id="">
-									</div>
+						<div class="form-group">
+							<label for="">Teléfono Móvil</label>
+							<input type="text" id="">
+						</div>
 
 		       	</form>
 		      </div>
@@ -436,6 +424,25 @@
 		    </div>
 		  </div>
 		</div>
+
+		<!--finalizacion-->
+		<div class="modal fade" id="finalizacion" tabindex="-1" role="dialog" aria-labelledby="finaliza" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Registro Exitoso</h4>
+		      </div>
+		      <div class="modal-body">
+		        Su registro ha sido Exitoso se ha generado el código QR de su comercio.
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Aceptar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		
 
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

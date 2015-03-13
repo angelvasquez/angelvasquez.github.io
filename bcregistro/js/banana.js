@@ -3,7 +3,7 @@ $(".btn-create-modal").click(function(){
 })
 
 
-$('.form-control').datepicker({
+$('.picker').datepicker({
     calendarWeeks: true,
      format: 'mm/dd/yyyy',
     startDate: '-3d'
