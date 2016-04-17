@@ -13,7 +13,7 @@ body {
   border: 0px solid #436fab;
   float: right;
   display: none;
-  margin: 10px -5px 0 0;
+  margin: 17px -5px 0 0;
   text-align: center;
   display: none;
   font-size: 24px;
@@ -22,8 +22,8 @@ body {
   background: #12396f;
   padding: 0;
   position: fixed;
-  right: -480px;
-  top: 60px;
+  right: -600px;
+  top: 70px;
   width: 250px;
   display: none;
   z-index: 9;
@@ -32,19 +32,27 @@ body {
   -webkit-transition: all 0.5s ease-in-out 0s;
   -moz-transition: all 0.5s ease-in-out 0s;
 }
+#menu-mobile.activo {
+  right: 0;
+}
 #menu-mobile ul {
   list-style-type: none;
   padding-left: 0;
   width: 100%;
 }
+#menu-mobile ul li {
+  width: 100%;
+  display: block;
+  height: auto;
+  padding: 15px 0 15px 15px;
+  margin-left: 0;
+  border-bottom: 1px solid #1d4b8d;
+}
 #menu-mobile ul a {
   color: #fff;
   display: block;
-  padding: 15px;
-  border-bottom: 1px solid #1d4b8d;
-}
-#menu-mobile ul.activo {
-  right: 0;
+  height: auto;
+  padding: 0;
 }
 nav {
   background: rgba(255,255,255,0.95);
@@ -432,4 +440,12 @@ figcaption {
   margin-left: 10px;
   left: 0.5em;
   margin-right: -50%;
+}
+@media screen and (max-width: 480px) {
+  #trigger-menu {
+    display: block;
+  }
+  #menu-mobile {
+    display: block;
+  }
 }
