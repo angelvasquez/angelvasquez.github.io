@@ -1,0 +1,405 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300)
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif)
+
+//variables
+$blanco = #ffffff
+$corp_1 = #006da9 //azul
+$corp_2 = #8dc63f //verde claro
+$corp_3 = #009344 //verde oscuro
+$corp_4 = #6d6e71 // gris
+$sombra-texto = 0 0 7px rgba(0,0,0,.9)
+$borde-imagen = 5px solid rgba(198, 228, 157, .5)
+
+body
+	font 14px/140% "Roboto"
+	color #6d6e71
+	padding-bottom 0
+	
+#trigger-menu 
+	padding 5px 10px
+	color #436fab
+	cursor pointer
+	border-radius  3px
+	border  0px solid #436fab
+	float right
+	display none
+	margin  10px -5px 0 0
+	text-align  center
+	display  none
+	font-size  24px
+
+#menu-mobile 
+	background  #12396f
+	padding  0
+	position  fixed
+	right  -480px
+	top  60px
+	width  250px
+	display none
+	z-index  9
+	height  100vh
+	transition  all 0.5s ease-in-out 0s
+	-webkit-transition  all 0.5s ease-in-out 0s
+	-moz-transition  all 0.5s ease-in-out 0s
+	
+	ul 
+		list-style-type  none
+		padding-left  0
+		width  100%
+		a
+			color  $blanco
+			display  block
+			padding  15px
+			border-bottom  1px solid #1d4b8d
+		&.activo
+			right  0
+	
+	
+
+nav
+	background  rgba(255, 255, 255,.95)
+	box-shadow 0 0 2px rgba(0,0,0,.5)
+	padding  0 20px
+	height  70px
+	z-index  9
+	position  fixed
+	top  0
+	width  100% 
+	.brand
+		width  170px
+		height  48px
+		text-indent  -9999999px
+		background url(../img/broteverde-horizontal.svg) no-repeat center center
+		background-size  100%
+		margin-top 10px
+	ul
+		display  table
+		list-style  none
+		border  none
+		li
+			display  table-cell
+			padding  25px 0
+			margin-left  20px
+			margin-right  20px
+			margin-top  0
+			height  70px
+			font  400 14px "Roboto"
+			border-bottom  3px solid transparent
+			text-decoration  none
+			-webkit-transition  all .25s ease-in-out 0s
+			-moz-transition  all .25s ease-in-out 0s
+			-ms-transition  all .25s ease-in-out 0s
+			-o-transition  all .25s ease-in-out 0s
+			transition  all .25s ease-in-out 0s
+			&:hover
+				background  #efefef
+				a
+			&.active
+				background $corp_4+80%
+			a
+				height  70px
+				padding 30px 15px
+				color  $corp_3
+                font-weight bold !important
+				text-decoration  none
+				-webkit-transition  all .25s ease-in-out 0s
+				-moz-transition  all .25s ease-in-out 0s
+				-ms-transition  all .25s ease-in-out 0s
+				-o-transition  all .25s ease-in-out 0s
+				transition  all .25s ease-in-out 0s
+				&:hover
+					color $corp_1 !important
+		
+
+//FOOTER
+footer
+	background #c6e29f
+	padding 15px 0
+	margin-bottom 0
+	font-size 14px
+	color #596a44
+	a
+		color #596a44
+		&:hover
+			color #596a44
+	.logo-footer
+		width 30px
+		height 30px
+		margin auto
+		margin-top -5px
+		display block
+		background url(../img/logo-footer.svg) no-repeat center center
+
+        
+//HERO
+.hero 
+	background url(../img/hero/bg-hero.png) no-repeat center center
+	background-size cover
+	height 650px
+	display block
+	h2
+		text-align center
+		width 100%
+		font 42px "Bree Serif"
+		text-shadow 0 0 20px rgba(0,0,0,0.5)
+		margin 270px auto 0 auto
+		color $blanco
+	h3
+		font-size 16px
+		line-height 140%
+		text-shadow 0 0 20px rgba(0,0,0,0.5)
+		color $blanco
+		font-weight 400
+		text-align center
+		width 50%
+		margin 5px auto
+
+//SERVICIOS HOME
+.icono__servicio
+	border none
+	width 120px
+	height 120px
+	margin-bottom 10px
+	&--soluciones
+		background url(../img/iconos/ico-soluciones.svg) no-repeat center center
+		background-size 110%
+	&--bajo-consumo
+		background url(../img/iconos/ico-bajo-consumo.svg) no-repeat center center
+		background-size 110%
+	&--asesorias
+		background url(../img/iconos/ico-asesorias.svg) no-repeat center center
+		background-size 110%
+		
+
+
+//GENERICOS
+a
+	&:hover
+		text-decoration none
+.titulo-home
+	text-align center
+	font 24px "Bree serif"
+
+.titulo-seccion
+	font 32px "Bree serif"
+	margin-bottom 20px
+
+.subtitulo
+	font 24px "Bree serif"
+	margin-bottom 20px
+	margin-top 0
+
+.bajada
+	font-size 32px
+	font-weight 300
+	line-height 111%
+	color $corp_2 !important
+
+figure,
+figcaption
+	text-align center
+	text-transform uppercase
+	
+figure
+	border-radius 50%
+	border $borde-imagen
+	width 170px
+	height 170px
+	margin 20px auto
+	overflow hidden
+	
+figcaption
+	padding-left 20px
+	padding-right 20px
+	
+	
+.btn-mas-info
+	border-radius 20px
+	padding 10px
+	height auto
+	border 1px solid $corp_2
+	color $corp_2
+	margin 60px 0 20px 0
+	text-transform uppercase
+	font-weight bold
+	font-size 14px
+	clear both
+	-webkit-transition  all .25s ease-in-out 0s
+	-moz-transition  all .25s ease-in-out 0s
+	-ms-transition  all .25s ease-in-out 0s
+	-o-transition  all .25s ease-in-out 0s
+	transition  all .25s ease-in-out 0s
+	&:hover
+		color #009344
+		border-color #009344
+
+//SECCIONES
+.home
+	.ofrecemos,
+	.testimonios,
+	.proponemos
+		padding 60px 0 60px 0
+	.proponemos
+		figure
+			position relative
+			img
+				margin 0 0 0 -90px
+				position absolute
+				left 50%	
+	
+.testimonios
+	background url(../img/bg-testimonios.png) no-repeat center center
+	background-size cover
+	min-height 465px
+	text-align center
+	.titulo-home
+		color $blanco
+		text-shadow $sombra-texto
+	q
+		color $blanco
+		font 36px "Bree serif"
+		display block
+		margin 40px auto
+		text-shadow $sombra-texto
+		width 55%
+	.btn-mas-info
+		color $blanco
+		border-color $blanco
+		text-shadow $sombra-texto
+		&:hover
+			color #009344
+			border-color #009344
+
+.hero__interior
+	padding-top 150px
+	.titulo-seccion__interior
+		color $blanco
+		margin-bottom 10px
+	&--quienes
+		background url(../img/bg_quienes.png) no-repeat center center
+		background-size cover
+		height 650px
+		.titulo-seccion__interior
+			margin-bottom 60px
+		p
+			color $blanco
+		figure
+			width 350px
+			height 350px
+			overflow hidden
+			margin-top -80px
+			img
+				left -30%
+				top -25px
+				position relative
+	&--generica
+		padding-top 120px
+		background url(../img/bg_quienes.png) no-repeat center center
+		background-size cover
+		height 300px
+	
+	
+.proposito
+	padding 60px 0
+	.frase
+		color $corp_3
+		font-size 22px
+		line-height 200%
+		font-weight 300
+		width auto
+
+.interior
+	.proponemos
+		background $corp_4 + 90%
+		padding 60px 0
+		figure
+			width 150px
+			height 150px
+	.ofrecemos
+		display flex
+		padding 60px 0
+		.col-ofrecemos
+			flex 1
+			figure
+				width 120px
+				height 120px
+			.icono__servicio
+				background-size 80% !important
+				&--balcones
+					background url(../img/iconos/ico-soluciones.svg) no-repeat center center
+				&--deteriorados
+					background url(../img/iconos/ico-soluciones.svg) no-repeat center center
+				&--construccion
+					background url(../img/iconos/ico-soluciones.svg) no-repeat center center
+				&--riego
+					background url(../img/iconos/ico-soluciones.svg) no-repeat center center
+				&--asesoria
+					background url(../img/iconos/ico-asesorias.svg) no-repeat center center
+				&--maceteros
+					background url(../img/iconos/ico-soluciones.svg) no-repeat center center
+				&--interiores
+					background url(../img/iconos/ico-soluciones.svg) no-repeat center center
+	.descripcion
+		font-weight 400
+		font-size 18px
+		color $corp_2
+		width 50%
+		display block
+	.thumb
+		height auto
+		padding-top 0
+		padding-bottom 0
+		vertical-align top
+		display table
+		figure
+			display table-cell
+			border-radius 0
+			width auto
+			height auto
+			position relative
+			overflow hidden
+			border 2px solid #efefef
+			img
+				border-radius 5px
+				width 100%
+			.overlay
+				width 100%
+				height 100%
+				position absolute
+				top 100%
+				z-index 2
+				display block
+				opacity .7
+				background $corp_2
+				transition all 0.3s ease-in-out 0s
+				.fa
+					font-size 24px
+					text-shadow 0 0 5px rgba(0,0,0,.3)
+					color $blanco
+					position absolute
+					top calc(50% - 12px)
+					left calc(50% - 9px)
+			&:hover
+				.overlay
+					top 0
+	.galeria
+		padding-top 40px
+		.row__thumbs
+			margin-bottom 60px
+			&:last-child
+				margin-bottom 60px
+		h4
+			overflow hidden
+			width auto
+			&:after
+				background-color #ccc
+				content ""
+				display inline-block
+				height 1px
+				position relative
+				vertical-align middle
+				width 100%
+				margin-left 10px
+				left 0.5 em
+				margin-right -50%
+				
