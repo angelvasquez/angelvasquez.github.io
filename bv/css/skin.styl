@@ -253,29 +253,28 @@ figcaption
 				margin 0 0 0 -90px
 				position absolute
 				left 50%	
-	
-.testimonios
-	background url(../img/bg-testimonios.png) no-repeat center center
-	background-size cover
-	min-height 465px
-	text-align center
-	.titulo-home
-		color $blanco
-		text-shadow $sombra-texto
-	q
-		color $blanco
-		font 36px "Bree serif"
-		display block
-		margin 40px auto
-		text-shadow $sombra-texto
-		width 55%
-	.btn-mas-info
-		color $blanco
-		border-color $blanco
-		text-shadow $sombra-texto
-		&:hover
-			color #009344
-			border-color #009344
+	.testimonios
+		background url(../img/bg-testimonios.png) no-repeat center center
+		background-size cover
+		min-height 465px
+		text-align center
+		.titulo-home
+			color $blanco
+			text-shadow $sombra-texto
+		q
+			color $blanco
+			font 36px "Bree serif"
+			display block
+			margin 40px auto
+			text-shadow $sombra-texto
+			width 55%
+		.btn-mas-info
+			color $blanco
+			border-color $blanco
+			text-shadow $sombra-texto
+			&:hover
+				color #009344
+				border-color #009344
 
 .hero__interior
 	padding-top 150px
@@ -304,26 +303,7 @@ figcaption
 		background url(../img/bg_quienes.png) no-repeat center center
 		background-size cover
 		height 300px
-
-.galerias
-	.hero__interior
-		&--generica
-			background url(../img/bg_generica2.png) no-repeat center center
-			height 300px
-			background-size cover
-
-.testimonios-page
-	.hero__interior
-		&--generica
-			background url(../img/bg_generica3.png) no-repeat center center
-			height 300px
-			background-size cover
-		.descripcion
-			font-weight 400
-			font-size 18px
-			color $blanco
-			width 50%
-			display block
+		
 	
 .proposito
 	padding 60px 0
@@ -428,8 +408,62 @@ figcaption
 				margin-left 10px
 				left 0.5 em
 				margin-right -50%
+	.testimonios
+		padding 40px 0 60px 0
+		.testimonio
+			margin 0 0 80px 0
+			text-align center
+			figure
+				img
+					height 100%
+	.contacto
+		padding 60px 0
+		.btn
+			margin-right 20px
+			border-radius 20px
+			background none
+			border 1px solid $corp_2
+			color $corp_2
+			text-transform uppercase
+			font-weight 700
+			padding 10px 20px
+			-webkit-transition  all .25s ease-in-out 0s
+			-moz-transition  all .25s ease-in-out 0s
+			-ms-transition  all .25s ease-in-out 0s
+			-o-transition  all .25s ease-in-out 0s
+			transition  all .25s ease-in-out 0s
+			&:hover
+				color #009344
+				border-color #009344
+		small
+			padding-top 12px
+		h3,
+		h5
+			&:after
+				display block
+				content ""
+				border none
+				margin 0 auto 15px auto
+			.fa
+				display block
+				clear both
+				color $corp_1
+				margin-bottom 8px
+			.fa-mobile
+				font-size 20px
+		h3
+			color $corp_1
+		h5
+			font-weight 200
 
-@media screen and (max-width: 480px)
+.gracias
+	footer
+		position relative
+		bottom -87px
+		margin-bottom -100px
+			
+
+@media screen and (max-width:480px)
 	#trigger-menu
 		display block
 	#menu-mobile

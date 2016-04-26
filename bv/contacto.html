@@ -20,7 +20,7 @@
 <body class="interior wow fadeIn">
 	
 	<nav>
-		<h1 class="brand pull-left">BroteVerde</h1>
+		<a href="index.html"><h1 class="brand pull-left">BroteVerde</h1></a>
 		<div href="#" id="trigger-menu"><i class="fa fa-bars"></i></div>
 		<div id="menu-mobile">
 			<ul>
@@ -47,18 +47,56 @@
 					<div class="row">
 						<div class="col-md-12">
 							<h2 class="titulo-seccion titulo-seccion__interior">Contacto</h2>
-							<span class="descripcion">Un espacio para tu familia o un lugar de relajo. Lo hacemos realidad.</span>
+							<span class="descripcion">Cuéntanos tu idea, queremos ser parte de tu sueño.</span>
 						</div>
 					</div>
 			</div>		
 	</section>
 
 	<!--CONTACTO-->
-	<div class="container">
+	<div class="container contacto">
 			<div class="row">
-				<div class="col-md-4"></div>
-				<div class="col-md-4"></div>
-				<div class="col-md-4"></div>
+				<div class="col-md-6 col-md-offset-1">
+					<form action="enviar.php" method="post">
+						     <div class="row">
+							      <div class="form-group col-md-6">
+							       <label for="name">Nombre *</label>
+							       <input type="text" name="name" class="form-control" id="name" placeholder="Su nombre..." required>
+							     </div>
+
+							     <div class="form-group col-md-6">
+							       <label for="email">Email *</label>
+							       <input type="email" name="email" class="form-control" id="email" placeholder="Su e-mail..." required>
+							     </div>
+
+							    <div class="form-group col-md-6">
+							    	<label for="telefono">Teléfono</label>
+							    	<input type="text" name="phone" class="form-control" id="telefono" placeholder="Número de teléfono..." required>
+							    </div>
+
+							    <div class="form-group col-md-6">
+							      <label for="subject">Asunto</label>
+							      <input type="text" name="subject" class="form-control" id="subject" placeholder="Asunto...">
+							    </div>
+
+							    <div class="form-group col-md-12">
+							     <label for="message">Comentario *</label>
+							     <textarea name="message" id="message" class="form-control" placeholder="Escriba su comentario..." cols="30" rows="3" required></textarea>
+							   </div>
+
+							   <div class="col-md-12">
+									<input type="submit" value="Enviar" class="btn btn-primary btn-large pull-left" data-loading-text="Loading..."> <small class="pull-left">* Obligatorios</small>
+							   </div>
+
+							 </div>
+					</form>
+				</div>
+				<div class="col-md-4 text-center">
+					<h3>Brote Verde Paisajismo</h3>
+					<h5><i class="fa fa-mobile"></i> (+569) 9089 4769</h5>
+					<h5><i class="fa fa-envelope"></i> contacto@broteverde.cl</h5>
+					<h5><i class="fa fa-envelope"></i> paola.paredes@broteverde.cl</h5>
+				</div>
 			</div>
 	</div>
 	<footer class="container-fluid">
