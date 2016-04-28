@@ -17,10 +17,9 @@ body
 	
 #trigger-menu 
 	padding 5px 10px
-	color #436fab
+	color $corp_2
 	cursor pointer
 	border-radius  3px
-	border  0px solid #436fab
 	float right
 	display none
 	margin  17px -5px 0 0
@@ -29,7 +28,7 @@ body
 	font-size  24px
 
 #menu-mobile 
-	background  #12396f
+	background  $corp_3
 	padding  0
 	position  fixed
 	right  -600px
@@ -54,7 +53,11 @@ body
 			height auto
 			padding 15px 0 15px 15px
 			margin-left 0
-			border-bottom  1px solid #1d4b8d
+			border-bottom  1px solid $corp_3 + 5%
+			&:active,
+			&:focus,
+			&:hover
+				background $corp_2
 		a
 			color  $blanco
 			display  block
@@ -247,7 +250,8 @@ figcaption
 	.ofrecemos,
 	.testimonios,
 	.proponemos
-		padding 60px 0 60px 0
+		padding-top 60px
+		padding-bottom 60px
 	.proponemos
 		figure
 			position relative
@@ -308,7 +312,8 @@ figcaption
 		
 	
 .proposito
-	padding 60px 0
+	padding-top 60px
+	padding-bottom 60px
 	.frase
 		color $corp_3
 		font-size 22px
@@ -319,12 +324,14 @@ figcaption
 .interior
 	.proponemos
 		background $corp_4 + 90%
-		padding 60px 0
+		padding-top 60px
+		padding-bottom 60px
 		figure
 			width 150px
 			height 150px
 	.ofrecemos
-		padding 60px 0
+		padding-top 60px
+		padding-bottom 60px
 		figure
 			width 150px
 			height 150px
@@ -401,7 +408,8 @@ figcaption
 				left 0.5 em
 				margin-right -50%
 	.testimonios
-		padding 40px 0 60px 0
+		padding-top 40px
+		padding-bottom 60px
 		.testimonio
 			margin 0 0 80px 0
 			text-align center
@@ -409,7 +417,8 @@ figcaption
 				img
 					height 100%
 	.contacto
-		padding 60px 0
+		padding-top 60px
+		padding-bottom 60px
 		.btn
 			margin-right 20px
 			border-radius 20px
@@ -460,3 +469,79 @@ figcaption
 		display block
 	#menu-mobile
 		display block
+	
+
+	//HOME
+	.home
+		.hero
+			height 550px
+			h2
+				margin-top 200px
+				font-size 32px
+			h3
+				width 90%
+		.ofrecemos,
+		.testimonios,
+		.proponemos
+			padding-top 40px
+			padding-bottom 40px
+		.testimonios
+			q
+				font-size 24px
+				width 90%
+	
+	footer
+		font-size 12px
+		
+
+	//INTERIOR
+	.interior
+		.descripcion
+			width 100%
+		.hero__interior
+			padding-top 80px
+			&--quienes
+				height 700px
+				figure
+					width 200px
+					height 200px
+					margin-top 20px
+					img
+						height 100%
+						top 0
+						left -40px
+			&--generica
+				height 250px
+			.titulo-seccion__interior
+				margin-bottom 15px
+			.bajada
+				font-size 20px
+				font-weight 400
+		
+		.proposito
+			padding-top 130px
+			.frase
+				font-size 16px
+		
+		.ofrecemos
+			.detalle
+				text-align center
+		
+		.galeria
+			h4
+				font-size 16px
+				&:after
+					display none
+			.thumb
+				margin-bottom 20px
+		
+		.testimonios
+			.testimonio
+				margin-bottom 40px
+		
+		.contacto
+			.col-md-4
+				margin-top 40px
+			textarea
+				resize none
+				
