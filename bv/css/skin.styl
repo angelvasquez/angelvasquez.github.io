@@ -132,13 +132,25 @@ footer
 		color #596a44
 		&:hover
 			color #596a44
+			
 	.logo-footer
 		width 30px
 		height 30px
 		margin auto
-		margin-top -5px
+		margin-top -4px
 		display block
 		background url(../img/logo-footer.svg) no-repeat center center
+	
+	a
+		.fa
+			margin-top 3px
+			font-size 18px
+			margin-left 10px
+		&:hover
+			.fa-facebook-official
+				color #3b5998
+			.fa-instagram
+				color #125688
 
         
 //HERO
@@ -338,11 +350,17 @@ figcaption
 			margin 0 auto
 			img
 				height 100%
+				margin-left -30px
+		.row
+			&:last-child
+				figure
+					img
+						margin-left 0px
 		.detalle
 			outline 0px solid red
 			min-height 150px
 			margin-bottom 40px
-			padding-top 18px
+			padding-top 20px
 				
 	.descripcion
 		font-weight 400
@@ -550,14 +568,14 @@ figcaption
 				resize none
 
 
-@media (min-width: 360px)
+@media (width: 360px)
 	.interior
 		.hero__interior
 			&--quienes
 				height 625px
 				
 
-@media (min-width: 375px)
+@media (width: 375px)
 	.interior
 		.hero__interior
 			&--quienes
@@ -568,7 +586,7 @@ figcaption
 					img
 						width 340px
 
-@media (min-width: 414px)
+@media (width: 414px)
 	.interior
 		.hero__interior
 			&--quienes
@@ -578,4 +596,11 @@ figcaption
 				figure
 					img
 						width 380px
+
+@media (width: 320px)
+	.thumb
+		&:first-child
+			figure
+				img
+					width 285px
 				
