@@ -1,0 +1,81 @@
+.panel{
+	margin-bottom: 20px;
+}
+
+.panels-col{
+	width: 72.5%;
+	border: 0px solid red;
+}
+
+.agents-filter{
+	background: #EFEFEF;
+	width: 94.4%;
+}
+
+.head .head-info .tabs{
+	right: -6px;
+}
+
+.agents-filter .filter{
+	list-style: none;
+	padding:0;
+	margin-bottom: 0;
+	margin-left: 0;
+	width: 25%;
+}
+
+.agents-filter .filter li{
+	padding: 3px 10px 3px 10px;
+	height: 20px;
+}
+
+.agents-filter .filter li.title-filters{
+	background: none;
+	font-weight: bold;
+	border: none;
+}
+
+.title-tags{
+	background: none;
+}
+
+.panels{
+	padding-top: 20px;
+}
+
+.sidebar{
+	margin-top: -20px;
+	padding: 10px;
+}
+
+.sidebar .title-sidebar{
+	margin-top: 17px;
+}
+
+/*icons*/
+
+ul li i, i{
+	background: url("../img/icons.png") no-repeat left top;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+}
+
+.fa-ban{
+	background-position: left top;
+	margin-right: 3px;
+}
+
+.fa-times{
+	background-position: -12px 1px;
+}
+
+.fa-plus{
+	background-position: -24px 1px;
+	margin-right: 3px;
+}
+
+.fa-sign-out{
+	background-position: -36px 1px;
+	margin-right: 3px;
+}

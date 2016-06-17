@@ -308,6 +308,10 @@ figcaption
 			margin-bottom 60px
 		p
 			color $blanco
+			font-size 16px
+		.bajada
+			font-size 33px
+			line-height 120%
 		figure
 			width 350px
 			height 350px
@@ -483,6 +487,16 @@ figcaption
 		bottom -87px
 		margin-bottom -100px
 
+@media screen and (width: 1024px)
+	.hero__interior
+		&--quienes
+			p
+				color $blanco
+				font-size 16px
+			.bajada
+				font-size 31px
+				line-height 120%
+
 
 @media screen and (max-width:768px)
 	#trigger-menu
@@ -511,6 +525,8 @@ figcaption
 			padding-bottom 40px
 	
 	.interior
+		.descripcion
+			color $blanco
 		.hero__interior--quienes
 			padding-top 100px
 			height 600px
@@ -579,6 +595,8 @@ figcaption
 			padding-top 80px
 			&--quienes
 				height 700px
+				p
+					font-size 16px
 				figure
 					width 200px
 					height 200px
@@ -594,6 +612,7 @@ figcaption
 			.bajada
 				font-size 20px
 				font-weight 400
+				color $blanco !important
 		
 		.proposito
 			padding-top 130px
@@ -627,14 +646,14 @@ figcaption
 	.interior
 		.hero__interior
 			&--quienes
-				height 625px
+				height 700px
 				
 
 @media (width: 375px)
 	.interior
 		.hero__interior
 			&--quienes
-				height 630px
+				height 670px
 		.thumb
 			&:first-child
 				figure
@@ -653,9 +672,14 @@ figcaption
 						width 380px
 
 @media (width: 320px)
-	.thumb
-		&:first-child
-			figure
-				img
-					width 285px
+	.interior
+		.hero__interior
+			&--quienes
+				height 750px !important
+		.thumb
+			&:first-child
+				figure
+					img
+						width 285px
+	
 				
