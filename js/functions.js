@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-	console.log("init");
-
 	var elements = new Array;
 	var tagList = new Array;
 	var listSelected;
