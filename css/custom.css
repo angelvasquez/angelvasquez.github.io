@@ -200,6 +200,12 @@
 	padding-left: 5px;
 }
 
+.agents-filter .filter .title-filters{
+	background: none;
+	border: none;
+	font-weight: bold;
+}
+
 .agents-filter .filter li.active{
 	background: #CCC;
 }
@@ -312,6 +318,10 @@
 
 .tags li i{
 	cursor: pointer;
+}
+
+.tags .title-tags{
+	background: none;
 }
 
 .trigger-cont{
