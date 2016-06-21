@@ -33,6 +33,10 @@ $(document).ready(function(){
 						display: 'block'
 					});
 				}
+			});//end trigger modal
+
+			$(".tags").on('click', "i", function(){
+				$(this).parent().remove();
 			});
 		});
 
@@ -55,10 +59,5 @@ $(document).ready(function(){
 				display: 'none'
 			});
 			$('#newElement').val("");
-		});
-
-
-		$("#tags-0 > #ubuntu > i").on('click', function(){
-			$("#tags-0 #ubuntu").remove();
 		});
 });

@@ -95,10 +95,7 @@
 .sidebar .history-list li{
 	font-size: 80%;
 }
-
-.panel{
-	background: #EFEFEF;
-}
+|
 
 .head{
     display: table;
@@ -211,6 +208,8 @@
 }
 
 .panel{
+	background: #f8f4c7;
+	border: 1px solid #CCC;
 	margin-top: 20px;
 	padding: 5px 10px;
 	display: table;
@@ -219,6 +218,10 @@
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	behavior: url(css/PIE.htc);
+}
+
+.panel.deny{
+	background: #d4ebd2;
 }
 
 .panel .agent-pic{
