@@ -1,6 +1,7 @@
 
 .panel{
 	margin-bottom: 20px;
+	margin-top: 0;
 }
 
 .panels-col{
@@ -15,6 +16,10 @@
 
 .head .head-info .tabs{
 	right: -6px;
+}
+
+.head{
+	padding: 0;
 }
 
 .agents-filter .filter{
@@ -34,6 +39,14 @@
 	background: none;
 	font-weight: bold;
 	border: none;
+}
+
+.head-info{
+	margin-bottom: 0;
+}
+
+.tabs li{
+	margin-bottom: 0;
 }
 
 .title-tags{

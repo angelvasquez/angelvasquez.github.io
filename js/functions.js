@@ -18,7 +18,13 @@ $(document).ready(function(){
 				var position = $(this).position();
 				var top = position.top;
 				var left = position.left;
-				if (navigator.appVersion.indexOf("MSIE") != -1){
+				top = top + 30;
+				$(".modal").css({
+					top: top+"px",
+					left: left+"px",
+					display: 'block'
+				});
+				/*if (navigator.appVersion.indexOf("MSIE") != -1){
 					top = top + 30;
 					$(".modal").css({
 						top: top+"px",
@@ -32,13 +38,14 @@ $(document).ready(function(){
 						left: left+"px",
 						display: 'block'
 					});
-				}
+				}*/
 			});//end trigger modal
 
 			$(".tags").on('click', "i", function(){
 				$(this).parent().remove();
 			});
 		});
+
 
 		$('#addElement').on('click', function(){
 			listSelected = $("resources-"+selected);
