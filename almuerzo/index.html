@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Donde almuerzo</title>
+</head>
+<body>
+	<h2>Dónde almorzamos hoy?</h2>
+	<p><input type="text" id="resultado"></p>
+	<p><input type="button" name="" id="consulta" value="Donde, ah?"></p>
+	
+
+	<script>
+		var numero;
+		var total;
+		var lugares = ["Casino", "Hepatitis center", "Don José", "Nuria", "Casino", "Castaño", "Completos", "Cubano"];
+
+		total = lugares.length;
+
+		//alert(lugares)
+
+		boton = document.getElementById("consulta");
+		resultado = document.getElementById("resultado");
+
+		boton.addEventListener("click", muestraLugar);
+
+		function muestraLugar(){
+			numero = parseInt(Math.random()*total);
+			//alert(numero);
+			document.getElementById("resultado").value = lugares[numero];
+		}
+
+	</script>
+
+</body>
+</html>
