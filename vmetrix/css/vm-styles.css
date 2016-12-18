@@ -1,0 +1,212 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700';
+@import 'https://fonts.googleapis.com/css?family=Oswald:300,400';
+body {
+  font: 400 16px/160% 'Roboto Condensed', Arial, sans-serif;
+  color: #282828;
+}
+/*NAVIGATION*/
+nav {
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #b7e6f2;
+  z-index: 9999;
+  transition: all ease-in-out 0.3s;
+}
+nav .brand {
+  background: url("../img/logo-vmetrix-corp.svg");
+  text-indent: -999999px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 80px;
+  height: 35px;
+  margin-top: 10px;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
+nav ul {
+  margin: 0;
+}
+nav ul li {
+  display: inline;
+  float: left;
+}
+nav ul li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #b7e6f2;
+  display: block;
+  padding: 10px 15px;
+  margin: 0;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  background: #f00;
+  color: #fff;
+}
+nav.active {
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  border-bottom: none;
+}
+nav.active a {
+  color: #0d70b1;
+}
+nav.active .brand {
+  opacity: 1;
+}
+/*GLOBALES*/
+#hero,
+#company,
+#services,
+#clients,
+#quote,
+#video,
+#contact-us {
+  height: 600px;
+  padding: 40px;
+  border-bottom: 1px solid #efefef;
+}
+h3 {
+  color: #0d70b1;
+  font: 300 23px 'Oswald';
+  text-transform: uppercase;
+}
+h3:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100px;
+  background: #0d70b1;
+  margin: 20px auto;
+}
+.sentence {
+  font: 300 23px 'Roboto Condensed';
+}
+#hero {
+  background: #0d70b1;
+  color: #fff;
+  padding-top: 90px;
+  height: 100vh;
+}
+#hero figure {
+  background: url("../img/logo-vmetrix.svg");
+  text-indent: -999999px;
+  background-repeat: no-repeat;
+  margin-top: 130px;
+  background-size: 100%;
+  width: 200px;
+  height: 70px;
+}
+#hero figcaption {
+  font: 19px Arial, sans-serif;
+  margin-left: 5px;
+}
+#hero figcaption:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100px;
+  background: #fff;
+  margin: 20px 0;
+}
+#hero p {
+  font: 300 16px/160% 'Roboto Condensed';
+  width: 43%;
+}
+#company {
+  padding-top: 130px;
+  background: url("../img/bg-company.png") #f0f0f0;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-attachment: fixed;
+}
+#company .sentence {
+  color: #808080;
+  width: 90%;
+  margin: auto;
+}
+#company .sentence:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100px;
+  background: #c4cce2;
+  margin: 20px auto;
+}
+#company input[type=button] {
+  font-weight: 300;
+  padding: 5px 20px;
+  color: #939393;
+  border: 1px solid #939393;
+  border-radius: 3px;
+  background: none;
+  font: light 16px 'Roboto Condensed';
+  margin-top: 40px;
+}
+#services {
+  background: #f7f6f6;
+}
+#services .item {
+  margin-top: 90px;
+  text-align: center;
+}
+#services .item figcaption {
+  margin-top: 20px;
+  line-height: 120%;
+}
+#clients {
+  background-image: url("../img/bg-clients.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+#quote {
+  height: 400px;
+  padding-top: 90px;
+}
+#video {
+  padding: 0;
+  height: 560px;
+  overflow: hidden;
+}
+#video #vm-media {
+  margin: 0;
+  padding: 0;
+  width: 105%;
+}
+#contact-us {
+  height: auto;
+}
+#contact-us .box {
+  min-height: 400px;
+}
+#contact-us .box:first-child {
+  background: #f7f6f6;
+}
+#contact-us .box:last-child {
+  background: #e5e5e5;
+}
+#contact-us .box p {
+  margin-bottom: 20px;
+}
+#contact-us .box h4 {
+  color: #0d70b1;
+  font-size: 23px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+#contact-us .box .icon {
+  color: #a4b6ce;
+  font-size: 24px;
+  vertical-align: middle;
+  width: 27px;
+  display: inline-block;
+  text-align: center;
+}
+footer {
+  background: #0d70b1;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}

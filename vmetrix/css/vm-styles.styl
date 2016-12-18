@@ -1,0 +1,217 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700'
+@import 'https://fonts.googleapis.com/css?family=Oswald:300,400'
+
+azul = #0d70b1
+gris = #282828
+gris2 = #808080
+blanco = #FFFFFF
+celeste = #b7e6f2
+
+altomaximo = 600px
+paddestandar = 40px
+
+osw = 'Oswald'
+
+arial = Arial, sans-serif
+
+rob = 'Roboto Condensed'
+rob_light = 300
+rob_normal = 400
+rob_bold = 700
+
+fondogris = #f0f0f0
+fondogris2 = #f7f6f6
+fondogris3 = #e5e5e5
+fondoazul = azul
+
+
+body
+	font rob_normal 16px/160% rob, arial
+	color gris
+	
+/*NAVIGATION*/
+nav
+	position fixed
+	width 100%
+	border-bottom 1px solid celeste
+	z-index 9999
+	transition all ease-in-out 0.3s
+	.brand
+		background url('../img/logo-vmetrix-corp.svg')
+		text-indent -999999px
+		background-repeat no-repeat
+		background-size 100%
+		width 80px
+		height 35px
+		margin-top 10px
+		opacity 0
+		transition all ease-in-out 0.3s
+	ul
+		margin 0
+		li
+			display inline
+			float left
+			
+			a
+				font-size 14px
+				text-transform uppercase
+				color celeste
+				display block
+				padding 10px 15px
+				margin 0
+				&:hover
+					text-decoration none
+					background red
+					color blanco
+	&.active
+		background rgba(255,255,255,.9)
+		box-shadow 0 0 3px rgba(0,0,0,.5)
+		border-bottom none
+		a
+			color azul
+		.brand
+			opacity 1
+	
+					
+/*GLOBALES*/
+#hero,
+#company,
+#services,
+#clients,
+#quote,
+#video,
+#contact-us
+	height altomaximo
+	padding paddestandar
+	border-bottom 1px solid #efefef
+	
+h3
+	color azul
+	font 300 23px osw
+	text-transform uppercase
+	&:after
+		content ''
+		display block
+		height 3px
+		width 100px
+		background azul
+		margin 20px auto
+
+.sentence
+	font rob_light 23px rob
+	
+
+#hero
+	background azul
+	color blanco
+	padding-top 90px
+	height 100vh
+	figure
+		background url('../img/logo-vmetrix.svg')
+		text-indent -999999px
+		background-repeat no-repeat
+		margin-top 130px
+		background-size 100%
+		width 200px
+		height 70px
+	figcaption
+		font 19px arial
+		margin-left 5px
+		&:after
+			content ''
+			display block
+			height 3px
+			width 100px
+			background blanco
+			margin 20px 0
+	p
+		font 300 16px/160% rob
+		width 43%
+
+
+#company
+	padding-top 130px
+	background url('../img/bg-company.png') fondogris
+	background-repeat no-repeat
+	background-position bottom center
+	background-attachment fixed
+	.sentence
+		color gris2
+		width 90%
+		margin auto
+		&:after
+			content ''
+			display block
+			height 3px
+			width 100px
+			background #c4cce2
+			margin 20px auto
+	input[type=button]
+		font-weight rob_light
+		padding 5px 20px
+		color #939393
+		border 1px solid #939393
+		border-radius 3px
+		background none
+		font light 16px rob
+		margin-top 40px
+			
+			
+#services
+	background fondogris2
+	.item
+		margin-top 90px
+		text-align center
+		figcaption
+			margin-top 20px
+			line-height 120%
+
+#clients
+	background-image url('../img/bg-clients.png')
+	background-size cover
+	background-attachment fixed
+	
+#quote
+	height 400px
+	padding-top 90px
+
+#video
+	padding 0
+	height 560px
+	overflow hidden
+	#vm-media
+		margin 0
+		padding 0
+		width 105%
+
+#contact-us
+	height auto
+	.box
+		min-height 400px
+		&:first-child
+			background fondogris2
+		&:last-child
+			background fondogris3
+		p
+			margin-bottom 20px
+		h4
+			color azul
+			font-size 23px
+			margin-top 70px
+			margin-bottom 20px
+			margin-left 5px
+		.icon
+			color #a4b6ce
+			font-size 24px
+			vertical-align middle
+			width 27px
+			display inline-block
+			text-align center
+			
+
+footer
+	background azul
+	color blanco
+	a
+		color blanco
+			
