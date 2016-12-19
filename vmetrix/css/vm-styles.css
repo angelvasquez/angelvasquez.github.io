@@ -221,6 +221,19 @@ footer a {
   color: #fff;
 }
 @media screen and (max-width: 600px) {
+  #hero,
+  #company,
+  #services,
+  #clients,
+  #quote,
+  #contact-us {
+    height: auto;
+    padding: 20px;
+    border-bottom: 1px solid #efefef;
+  }
+  #video {
+    display: none;
+  }
   nav {
     background: #fff;
     padding: 0 !important;
