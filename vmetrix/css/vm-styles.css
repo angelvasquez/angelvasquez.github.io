@@ -40,8 +40,6 @@ nav ul li a {
 }
 nav ul li a:hover {
   text-decoration: none;
-  background: #f00;
-  color: #fff;
 }
 nav.active {
   background: rgba(255,255,255,0.9);
@@ -53,6 +51,18 @@ nav.active a {
 }
 nav.active .brand {
   opacity: 1;
+}
+nav.active .mobile-menu {
+  color: #0d70b1;
+}
+nav .mobile-menu {
+  font-size: 28px;
+  color: #fff;
+  display: none;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  margin-top: 9px;
 }
 /*GLOBALES*/
 #hero,
@@ -209,4 +219,42 @@ footer {
 }
 footer a {
   color: #fff;
+}
+@media screen and (max-width: 480px) {
+  nav {
+    background: #fff;
+    padding: 0 !important;
+  }
+  nav .brand {
+    opacity: 1;
+    margin-left: 15px;
+  }
+  nav #main-nav {
+    padding-left: 0;
+    margin-left: 0;
+    display: none;
+    border-bottom: 1px solid #b7e6f2;
+  }
+  nav #main-nav li {
+    display: block;
+    width: 100%;
+  }
+  nav #main-nav li a {
+    color: #0d70b1;
+  }
+  nav #main-nav li a:hover {
+    background: #b7e6f2;
+    color: #0d70b1;
+  }
+  nav #main-nav li a:visited {
+    text-decoration: none;
+  }
+  nav .mobile-menu {
+    display: block;
+    color: #0d70b1;
+    cursor: pointer;
+  }
+  #services .item img {
+    width: 100%;
+  }
 }
