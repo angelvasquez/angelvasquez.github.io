@@ -59,10 +59,17 @@ nav .mobile-menu {
   font-size: 28px;
   color: #fff;
   display: none;
-  width: 32px;
-  height: 32px;
+  width: 46px;
+  height: 46px;
   text-align: center;
-  margin-top: 13px;
+  position: relative;
+}
+nav .mobile-menu .icon {
+  vertical-align: middle;
+  position: absolute;
+  display: block;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 /*GLOBALES*/
 #hero,
@@ -97,6 +104,7 @@ h3:after {
   color: #fff;
   padding-top: 90px;
   height: 100vh;
+  max-height: 600px;
 }
 #hero figure {
   background: url("../img/logo-vmetrix.svg");
@@ -155,14 +163,59 @@ h3:after {
 }
 #services {
   background: #f7f6f6;
+  height: auto;
+  padding-bottom: 60px;
 }
 #services .item {
   margin-top: 90px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  height: 250px;
+}
+#services .item figure {
+  margin-top: 20px;
 }
 #services .item figcaption {
   margin-top: 20px;
   line-height: 120%;
+}
+#services .item .item-detail {
+  display: block;
+  background: #f0f0f0;
+  padding: 15px;
+  position: absolute;
+  top: 100%;
+  height: 250px;
+  font-size: 14px;
+  line-height: 120%;
+  overflow-y: auto;
+  left: 0;
+  transition: all ease-in-out 0.3s;
+  text-align: left;
+}
+#services .item .item-detail p {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #e5e5e5;
+}
+#services .item:hover .item-detail {
+  top: 0;
+}
+#services .item ::-webkit-scrollbar,
+#services .item width 12px,
+#services .item ::-webkit-scrollbar-track,
+#services .item -webkit-box-shadow inset 0 0 6px rgba(0,
+#services .item 0,
+#services .item 0.3),
+#services .item -webkit-border-radius 10px,
+#services .item border-radius 10px,
+#services .item ::-webkit-scrollbar-thumb,
+#services .item background azul,
+#services .item 0.5),
+#services .item ::-webkit-scrollbar-thumb:window-inactive {
+  background: #f7f6f6;
 }
 #clients {
   background-image: url("../img/bg-clients.png");
@@ -240,7 +293,10 @@ footer a {
   }
   nav .brand {
     opacity: 1;
+    margin-top: 10px;
     margin-left: 15px;
+    width: 100px;
+    height: 30px;
   }
   nav #main-nav {
     padding-left: 0;

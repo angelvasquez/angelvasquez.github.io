@@ -75,10 +75,16 @@ nav
 		font-size 28px
 		color blanco
 		display none
-		width 32px
-		height 32px
+		width 46px
+		height 46px
 		text-align center
-		margin-top 13px
+		position relative
+		.icon
+			vertical-align middle
+			position absolute
+			display block
+			margin-top 10px
+			margin-left 20px
 		
 	
 					
@@ -115,6 +121,7 @@ h3
 	color blanco
 	padding-top 90px
 	height 100vh
+	max-height 600px
 	figure
 		background url('../img/logo-vmetrix.svg')
 		text-indent -999999px
@@ -168,12 +175,62 @@ h3
 			
 #services
 	background fondogris2
+	height auto
+	padding-bottom 60px
+	
 	.item
 		margin-top 90px
 		text-align center
+		position relative
+		overflow hidden
+		margin 0
+		height 250px
+		figure
+			margin-top 20px
 		figcaption
 			margin-top 20px
 			line-height 120%
+		.item-detail
+			display block
+			background fondogris
+			padding 15px
+			position absolute
+			top 100%
+			height 250px
+			font-size 14px
+			line-height  120%
+			overflow-y auto
+			left 0
+			transition all ease-in-out .3s
+			text-align left
+			p
+				margin-top 10px
+				padding-top 10px
+				border-top 1px solid fondogris3
+		
+		&:hover
+			.item-detail
+				top 0
+		::-webkit-scrollbar
+		    width 12px
+		 
+		/* Track */
+		::-webkit-scrollbar-track
+		    -webkit-box-shadow inset 0 0 6px rgba(0,0,0,0.3)
+		    -webkit-border-radius 10px
+		    border-radius 10px
+		 
+		/* Handle */
+		::-webkit-scrollbar-thumb
+		    -webkit-border-radius 10px
+		    border-radius 10px
+		    background azul
+		    -webkit-box-shadow inset 0 0 6px rgba(0,0,0,0.5)
+		
+
+		::-webkit-scrollbar-thumb:window-inactive
+			background fondogris2
+			
 
 #clients
 	background-image url('../img/bg-clients.png')
@@ -223,6 +280,9 @@ footer
 	color blanco
 	a
 		color blanco
+		
+
+
 
 
 @media screen and (max-width: 600px)
@@ -245,7 +305,10 @@ footer
 		padding 0 !important
 		.brand
 			opacity 1
+			margin-top 10px
 			margin-left 15px
+			width 100px
+			height 30px
 		#main-nav
 			padding-left 0
 			margin-left 0
