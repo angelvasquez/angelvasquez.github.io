@@ -323,7 +323,13 @@ footer a {
     color: #0d70b1;
     cursor: pointer;
   }
+  #services .item {
+    height: auto;
+  }
   #services .item img {
     width: 100%;
+  }
+  #services .item .item-detail {
+    display: none;
   }
 }
