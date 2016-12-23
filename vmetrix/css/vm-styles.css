@@ -417,6 +417,9 @@ footer h3:after {
   #hero figure {
     display: none;
   }
+  #hero p {
+    width: 100%;
+  }
   #video {
     display: none;
   }
