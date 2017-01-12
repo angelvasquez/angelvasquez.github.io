@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+		
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+
+		<link rel="stylesheet" href="css/wibi-styles.css">
+        <!--<link rel="stylesheet" href="css/main.css"> -->
+    </head>
+    <body>
+        
+		<div id="marca" class="container-fluid box">
+				<div class="row">
+					<div class="col-md-12 text-center titulo">
+						<h2>Elije la marca</h2>
+					</div>
+					<div class="col-md-12 text-center btn-container">
+						<a href="#modelo" class="btn btn-default">Continuar</a>
+					</div>
+				</div>
+		</div>
+
+		<div id="modelo" class="container-fluid box">
+				<div class="row">
+					<div class="col-md-12 text-center titulo">
+						<h2 class="wow bounceInDown">Selecciona el modelo que quieres</h2>
+					</div>
+					<div class="col-md-12 text-center">
+						<select class="selectpicker">
+						  <option>Modelo número 1</option>
+						  <option>Modelo número 2</option>
+						  <option>Modelo número 3</option>
+						</select>
+					</div>
+					<div class="col-md-12 text-center">
+						<h3>Qué versión</h3>
+						<div class="form-group">
+						    <div class="col-md-6 col-md-offset-3">
+						      <input type="text" class="form-control input-lg" id="inputPassword3" placeholder="Password">
+						    </div>
+						</div>
+					</div>
+					<div class="col-md-12 text-center btn-container">
+						<a href="#marca" class="btn btn-default">Volver</a>
+						<a href="#valor" class="btn btn-default">Continuar</a>
+					</div>
+				</div>
+		</div>
+
+		<div id="valor" class="container-fluid box">
+				<div class="row">
+					<div class="col-md-12 text-center titulo">
+						<h2>¿Cuál es el valor aproximado?</h2>
+					</div>
+					<div class="col-md-12 text-center btn-container">
+						<a href="#modelo" class="btn btn-default">Volver</a>
+						<a href="#uso" class="btn btn-default">Continuar</a>
+					</div>
+				</div>
+		</div>
+
+		<div id="uso" class="container-fluid box">
+				<div class="row">
+					<div class="col-md-12 text-center titulo">
+						<h2>¿Qué uso buscas darle a tu auto?</h2>
+					</div>
+					<div class="col-md-12 text-center btn-container">
+						<a href="#valor" class="btn btn-default">Volver</a>
+						<a href="#laborales" class="btn btn-default">Continuar</a>
+					</div>
+				</div>
+		</div>
+
+		<div id="laborales" class="container-fluid box">
+				<div class="row">
+					<div class="col-md-12 text-center titulo">
+						<h2>Las financieras buscan conocer un poco más tus actividades laborales</h2>
+					</div>
+					<div class="col-md-12 text-center btn-container">
+						<a href="#uso" class="btn btn-default">Volver</a>
+						<a href="#antecedentes" class="btn btn-default">Continuar</a>
+					</div>
+				</div>
+		</div>
+
+		<div id="antecedentes" class="container-fluid box">
+				<div class="row">
+					<div class="col-md-12 text-center titulo">
+						<h2>Cuéntanos tus antecedentes</h2>
+					</div>
+					<div class="col-md-12 text-center btn-container">
+						<a href="#laborales" class="btn btn-default">Volver</a>
+						<a href="#entrega" class="btn btn-default">Continuar</a>
+					</div>
+				</div>
+		</div>
+
+		<div id="entrega" class="container-fluid box">
+				<div class="row">
+					<div class="col-md-12 text-center titulo">
+						<h2>¿Cómo quieres estrenar tu auto nuevo?</h2>
+					</div>
+					<div class="col-md-12 text-center btn-container">
+						<a href="#antecedentes" class="btn btn-default">Volver</a>
+						<a href="#datos" class="btn btn-default">Continuar</a>
+					</div>
+				</div>
+		</div>
+
+		<div id="datos" class="container-fluid box">
+				<div class="row">
+					<div class="col-md-12 text-center titulo">
+						<h2>Estamos finalizando, faltan algunos datos tuyos para enviar la solicitud a las financieras</h2>
+					</div>
+					<div class="col-md-12 text-center btn-container">
+						<a href="#entrega" class="btn btn-default">Volver</a>
+						<a href="#" class="btn btn-default">Finalizar</a>
+					</div>
+				</div>
+		</div>
+
+
+		<!--js-->
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrolldepth/0.9.1/jquery.scrolldepth.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+		<script src="js/wibi.js"></script>
+    </body>
+</html>
