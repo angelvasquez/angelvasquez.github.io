@@ -81,7 +81,7 @@ body {
 .box {
   height: 97vh;
   background: #efefef;
-  position: relative;
+/*position relative*/
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -161,6 +161,6 @@ body {
 }
 @media screen and (max-width: 380px) {
   .box {
-    height: 600px;
+    height: 630px;
   }
 }
