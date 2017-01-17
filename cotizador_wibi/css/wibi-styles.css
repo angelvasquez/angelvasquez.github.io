@@ -151,7 +151,7 @@ body {
 }
 .box#antecedentes .antecedente__independiente,
 .box#antecedentes .antecedente__jubilado {
-  display: none--;
+  display: none;
 }
 .box#entregas .entrega span {
   text-align: center;
