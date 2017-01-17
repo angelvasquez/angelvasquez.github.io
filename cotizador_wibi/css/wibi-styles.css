@@ -95,8 +95,8 @@ body {
   display: block;
 }
 .box .btn-container {
-  position: absolute;
-  bottom: 20px;
+/*position absolute
+		bottom 20px*/
   width: 100%;
 }
 .box .btn-container .btn {
