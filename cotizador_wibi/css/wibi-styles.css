@@ -159,3 +159,8 @@ body {
   width: 100%;
   display: block;
 }
+@media screen and (max-width: 320px) {
+  .box {
+    height: 600px;
+  }
+}
