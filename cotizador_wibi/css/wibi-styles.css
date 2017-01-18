@@ -5,8 +5,9 @@
   padding: 0;
 }
 body {
-  font-family: 'Roboto Condensed', Arial;
+  font-family: 'Roboto Condensed', Arial !important;
   font-size: 16px;
+  color: #333;
 }
 .main-container {
   padding: 0 !important;
@@ -79,12 +80,13 @@ body {
 }
 /*COTIZADOR*/
 .box {
-  height: 97vh;
-  background: #efefef;
+  height: 90vh;
+  background: #fff;
 /*position relative*/
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 }
 .box h2 small {
   display: block;
@@ -107,7 +109,7 @@ body {
 .box .titulo {
   margin-bottom: 30px;
   text-align: center;
-  margin-top: -30px;
+  color: #333;
 }
 .box .titulo h2 {
   margin-top: 0;
@@ -125,14 +127,25 @@ body {
 }
 .box .otra-marca {
   text-align: center;
-  margin-top: 80px;
+  display: inline-block;
+  width: 300px;
+  margin: 80px auto;
 }
 .box .dropdown-toggle {
-  font-size: 20px !important;
+  font-size: 18px !important;
   width: 100%;
 }
 .box .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
   width: 100% !important;
+}
+.box strong {
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  display: block;
+}
+.box#modelo strong {
+  margin-top: 50px;
 }
 .box#valor .titulo:first-child {
   margin-bottom: 100px;
@@ -142,15 +155,24 @@ body {
   border: 1px solid #f00;
   width: 100%;
   display: block;
+  height: 100px;
+  color: #333;
 }
 .box#laborales .laboral span {
   text-align: center;
   border: 1px solid #f00;
   width: 100%;
   display: block;
+  height: 100px;
+  color: #333;
+}
+.box#antecedentes .antecedente label {
+  color: #333;
+  font-weight: 300;
+  text-align: left;
 }
 .box#antecedentes .antecedente__independiente,
-.box#antecedentes .antecedente__jubilado {
+.box#antecedentes .antecedente__empleo {
   display: none;
 }
 .box#entregas .entrega span {
@@ -158,6 +180,13 @@ body {
   border: 1px solid #f00;
   width: 100%;
   display: block;
+  height: 100px;
+  color: #333;
+}
+.box#datos label {
+  color: #333;
+  font-weight: 300;
+  text-align: left;
 }
 @media screen and (max-width: 380px) {
   .box {

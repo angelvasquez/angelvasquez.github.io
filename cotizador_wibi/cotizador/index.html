@@ -5,7 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Basic - Sequence.js Theme</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+
   <link href="css/sequence-theme.basic.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="../css/wibi-styles.css">
 
   <style>
     body {
@@ -20,41 +28,356 @@
 
     <div class="seq-screen">
       <ul class="seq-canvas">
-
         <li class="seq-step1" id="step1">
-          <div class="seq-content">
-            
-          
-          <a href="#" class="seq-next">Adelante</a>
+            <div class="seq-content">
 
-          </div>
+            <!---->
+            <div id="marca" class="box">
+                <div class="row">
+                    <div class="col-md-12 titulo">
+                        <h2>Elige la marca</h2>
+                    </div>
+                    
+                    <div class="col-md-10 col-md-offset-1">
+                        <!--MARCAS-->
+                        <div class="col-md-2 col-xs-4 marca"><span>Marca</span></div>
+                        <div class="col-md-2 col-xs-4 marca"><span>Marca</span></div>
+                        <div class="col-md-2 col-xs-4 marca"><span>Marca</span></div>
+                        <div class="col-md-2 col-xs-4 marca"><span>Marca</span></div>
+                        <div class="col-md-2 col-xs-4 marca"><span>Marca</span></div>
+                        <div class="col-md-2 col-xs-4 marca"><span>Marca</span></div>
+                    </div>
+                    
+                    <div class="otra-marca">
+                        <strong>Otras marcas</strong>
+                        <div class="form-group">
+                            <select class="selectpicker">
+                                <option>Selecciona</option>
+                                <option>Marca número 1</option>
+                                <option>Marca número 2</option>
+                                <option>Marca número 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---->
+
+            <a href="#" class="btn btn-default seq-next">Adelante</a>
+
+            </div>
           
         </li>
 
         <li class="seq-step2" id="step2">
           <div class="seq-content">
           
-          <a href="#" class="seq-prev">Anterior</a>
-          <a href="#" class="seq-next">Siguiente</a>
+            <div id="modelo" class="container-fluid box">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center titulo">
+                        <h2>Selecciona el modelo que quieres</h2>
+                    </div>
+
+                    <div class="col-md-4 col-md-offset-4">
+                        <select class="selectpicker">
+                            <option>Selecciona</option>
+                            <option>Modelo número 1</option>
+                            <option>Modelo número 2</option>
+                            <option>Modelo número 3</option>
+                        </select>
+
+                        <div class="form-group">
+                                <label>Qué versión (opcional)</label>
+                                <select class="selectpicker">
+                                    <option>Selecciona</option>
+                                    <option>Modelo número 1</option>
+                                    <option>Modelo número 2</option>
+                                    <option>Modelo número 3</option>
+                                </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          <!---->
+          <a href="#" class="btn btn-default seq-prev">Anterior</a>
+          <a href="#" class="btn btn-default seq-next">Siguiente</a>
 
           </div>
         </li>
 
         <li class="seq-step3" id="step3">
           <div class="seq-content">
+
             
-              <a href="#" class="seq-prev">Anterior</a>
+            <div id="valor" class="box">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4 text-center titulo">
+                        <h2>¿Cuál es el valor aproximado?</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" placeholder="$" value="$">
+                            <small>Pon un estimado, nosotros te ayudaremos a verificarlo</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-md-offset-4 text-center titulo">
+                        <h2>¿Cuánto tienes para el pie?</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" placeholder="$" value="$">
+                            <small>Dependiendo del pie vamos a calcular tu cuota</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---->
+            <a href="#" class="btn btn-default seq-prev">Anterior</a>
+            <a href="#" class="btn btn-default seq-next">Siguiente</a>
 
           </div>
         </li>
+
+
+        <li class="seq-step4" id="step4">
+          <div class="seq-content">
+
+            
+            <div id="usos" class="box">
+                <div class="row">
+                    <div class="col-md-12 text-center titulo">
+                        <h2>¿Qué uso buscas darle a tu auto?</h2>
+                    </div>
+
+                    <div class="col-md-2 col-md-offset-2 uso uso__personal"><span>Personal</span></div>
+                    <div class="col-md-2 uso uso__negocio"><span>Negocio</span></div>
+                    <div class="col-md-2 uso uso__taxi"><span>Servicio público (Taxi)</span></div>
+                    <div class="col-md-2 uso uso__uber"><span>Uber/Cabiffy</span></div>
+
+                </div>
+            </div>
+
+            <!---->
+            <a href="#" class="btn btn-default seq-prev">Anterior</a>
+            <a href="#" class="btn btn-default seq-next">Siguiente</a>
+
+          </div>
+        </li>
+
+
+
+        <li class="seq-step5" id="step5">
+          <div class="seq-content">
+
+            
+            <div id="laborales" class="box">
+                <div class="row">
+                    <div class="col-md-12 text-center titulo">
+                        <h2>Las financieras buscan conocer un poco más tus actividades laborales</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-3 laboral laboral__empleo"><span>Tengo empleo</span></div>
+                    <div class="col-md-2 laboral laboral__independiente"><span>Soy independiente</span></div>
+                    <div class="col-md-2 laboral laboral__jubilado"><span>Ya Jubilé</span></div>
+                </div>
+            </div>
+
+            <!---->
+            <a href="#" class="btn btn-default btn btn-default seq-prev">Anterior</a>
+            <a href="#" class="btn btn-default seq-next">Siguiente</a>
+          </div>
+
+        </li>
+
+
+        <li class="seq-step6" id="step6">
+          <div class="seq-content">
+
+            
+            <div id="antecedentes" class="container-fluid box">
+
+                <div class="row">
+                    <div class="col-md-12 text-center titulo">
+                        <h2>Cuéntanos tus antecedentes</h2>
+                    </div>
+                </div>
+                
+                <!--CON EMPLEO-->
+                <div class="row antecedente antecedente__empleo">
+                    <div class="form-group col-md-3">
+                        <label for="">Cuánto tiempo llevas contratado</label>
+                        <select class="selectpicker">
+                            <option>Selecciona</option>
+                            <option>0 a 6 meses</option>
+                            <option>7 a 12 meses</option>
+                            <option>Más de 12 meses</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label for="">Nombre de tu empleador</label>
+                        <input type="text" class="form-control input-lg" placeholder="" value="">
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label for="">Tu ingreso mensual</label>
+                        <input type="text" class="form-control input-lg" placeholder="$" value="$">
+                    </div>
+
+                    <div class="form-group col-md-3">
+                        <label for="">Cómo comprobarás ingresos?</label>
+                        <select class="selectpicker">
+                            <option>Selecciona</option>
+                            <option>Liquidaciones de sueldo</option>
+                            <option>Boletas de honorario</option>
+                            <option>Depósitos</option>
+                            <option>Sin comprobante</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!--INDEPENDIENTE-->
+                <div class="row antecedente antecedente__independiente">
+                    <div class="form-group col-md-4">
+                        <label for="">Cuanto tiempo independiente</label>
+                        <select class="selectpicker">
+                            <option>Selecciona</option>
+                            <option>0 a 6 meses</option>
+                            <option>7 a 12 meses</option>
+                            <option>Más de 12 meses</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="">Tu ingreso mensual</label>
+                        <input type="text" class="form-control input-lg" placeholder="$" value="$">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="">Cómo comprobarás ingresos</label>
+                        <select class="selectpicker">
+                            <option>Selecciona</option>
+                            <option>Liquidaciones de sueldo</option>
+                            <option>Boletas de honorario</option>
+                            <option>Depósitos</option>
+                            <option>Sin comprobante</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <!--JUBILADO-->
+                <div class="row antecedente antecedente__jubilado">
+                    <div class="form-group col-md-4">
+                        <label for="">Cuánto recibes de jubilación</label>
+                        <input type="text" class="form-control input-lg" placeholder="$" value="$">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="">Tu ingreso mensual</label>
+                        <input type="text" class="form-control input-lg" placeholder="$" value="$">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="">Cómo comprobarás tus ingresos</label>
+                        <select class="selectpicker">
+                            <option>Selecciona</option>
+                            <option>Liquidaciones de sueldo</option>
+                            <option>Boletas de honorario</option>
+                            <option>Depósitos</option>
+                            <option>Sin comprobante</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!---->
+            <a href="#" class="btn btn-default seq-prev">Anterior</a>
+            <a href="#" class="btn btn-default seq-next">Siguiente</a>
+          </div>
+
+        </li>
+
+
+        <li class="seq-step7" id="step7">
+          <div class="seq-content">
+
+            
+            <div id="entregas" class="container-fluid box">
+                <div class="row">
+                    <div class="col-md-12 text-center titulo">
+                        <h2>¿Cómo quieres estrenar tu auto nuevo?</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-2 entrega entrega__despacho"><span>Quiero que me lo despachen
+a domicilio</span></div>
+                    <div class="col-md-4 entrega entrega__retiro"><span>Quiero retirarlo en el concesionario</span></div>
+                </div>
+            </div>
+
+            <!---->
+            <a href="#" class="btn btn-default btn btn-default seq-prev">Anterior</a>
+            <a href="#" class="btn btn-default seq-next">Siguiente</a>
+          </div>
+
+        </li>
+
+
+        <li class="seq-step8" id="step8">
+          <div class="seq-content">
+
+            
+            <div id="datos" class="box">
+                <div class="row">
+                    <div class="col-md-12 text-center titulo">
+                        <h2>Estamos finalizando <small>Faltan algunos datos tuyos para enviar la solicitud a las financieras</small></h2>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <label for="">RUT</label>
+                        <input type="text" class="form-control input-lg" placeholder="Ej: 12.345.678-k" value="">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="">Dirección</label>
+                        <input type="text" class="form-control input-lg" placeholder="Ej: Av. Siempreviva" value="">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="">Comuna</label>
+                        <select class="selectpicker">
+                            <option>Selecciona</option>
+                            <option>San Pedro de la Paz</option>
+                        </select>
+                    </div>
+                </div>
+        </div>
+        <!---->
+            <a href="#" class="btn btn-default btn btn-default seq-prev">Anterior</a>
+            <a href="#" class="btn btn-default ">Finalizar</a>
+
+        </li>
+
 
       </ul>
     </div>
   </div>
 
-  <script src="scripts/imagesloaded.pkgd.min.js"></script>
-  <script src="scripts/hammer.min.js"></script>
-  <script src="scripts/sequence.min.js"></script>
-  <script src="scripts/sequence-theme.basic.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
+    <script src="scripts/imagesloaded.pkgd.min.js"></script>
+    <script src="scripts/hammer.min.js"></script>
+    <script src="scripts/sequence.min.js"></script>
+    <script src="scripts/sequence-theme.basic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="../js/wibi.js"></script>
 </body>
 </html>
