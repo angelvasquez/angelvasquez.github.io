@@ -187,7 +187,7 @@ function defineSequence(imagesLoaded, Hammer) {
       /* --- Touch Swipe --- */
 
       // Can the user navigate between steps by swiping on a touch enabled device?
-      swipeNavigation: true,
+      swipeNavigation: false,
 
       // Events to run when the user swipes in a particular direction
       swipeEvents: {
