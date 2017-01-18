@@ -184,7 +184,7 @@ html,
 }
 
 .seq .seq-step1 {
-  background-color: #279FE5;
+  /*background-color: #279FE5;*/
 }
 
 .seq .seq-step1 .seq-button:focus,
@@ -193,7 +193,7 @@ html,
 }
 
 .seq .seq-step2 {
-  background-color: #F96852;
+  /*background-color: #F96852;*/
 }
 
 .seq .seq-step2 .seq-button:focus,
@@ -202,7 +202,7 @@ html,
 }
 
 .seq .seq-step3 {
-  background-color: #2BBF8E;
+  /*background-color: #2BBF8E;*/
 }
 
 .seq .seq-step3 .seq-button:focus,
