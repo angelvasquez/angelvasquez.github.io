@@ -188,8 +188,3 @@ body {
   font-weight: 300;
   text-align: left;
 }
-@media screen and (max-width: 380px) {
-  .box {
-    height: 630px;
-  }
-}
