@@ -90,7 +90,6 @@ body
 .box
 	height 90vh
 	background #fff
-	/*position relative*/
 	display flex
 	justify-content center
 	flex-direction column
@@ -125,17 +124,29 @@ body
 			font-size 24px !important
 	.marca
 		text-align center
-		span
-			outline 1px solid red
-			width 100%
+		
+	.item
+		padding 10px
+		border 1px solid #efefef
+		width 100%
+		display block
+		color #333
+		height auto
+		&.active
+			border-color #fff !important
+			box-shadow 0 0 5px #999
+		i
+			background url('../cotizador/img/icono-demo.svg') no-repeat center top
+			width 80px
+			height 80px
 			display block
-			height 100px
+			margin auto
 	
 	.otra-marca
 		text-align center
-		display inline-block
-		width 300px
-		margin 80px auto
+		/*display inline-block
+		margin 80px auto*/
+		
 	
 	.dropdown-toggle
 		font-size 18px !important
@@ -149,6 +160,12 @@ body
 		margin-top 20px
 		display block
 	
+	
+	label
+		color #333
+		margin-top 40px
+	
+	
 	&#modelo
 		strong
 			margin-top 50px
@@ -161,23 +178,18 @@ body
 
 	&#usos
 		.uso
-			span
-				text-align center
-				border 1px solid red
-				width 100%
-				display block
-				height 100px
-				color #333
-	
+			&__personal
+				.item
+					i
+						background url('../cotizador/img/icono-demo.svg') no-repeat center top
+						width 80px
+						height 80px
+						display block
+						margin auto
+
+
 	&#laborales
-		.laboral
-			span
-				text-align center
-				border 1px solid red
-				width 100%
-				display block
-				height 100px
-				color #333
+
 	
 	&#antecedentes
 		.antecedente
@@ -190,20 +202,24 @@ body
 				display none
 	
 	&#entregas
-		.entrega
-			span
-				text-align center
-				border 1px solid red
-				width 100%
-				display block
-				height 100px
-				color #333
-	
+
 	&#datos
 		label
 			color #333
 			font-weight 300
 			text-align left
+			
+.seq-next,
+.seq-prev,
+.seq-finish
+	padding 10px 30px
+	margin-left 10px
+	margin-right 10px
+	
+.input-lg
+	height 40px
+	
+		
 
 
 @media screen and (max-width : 380px)

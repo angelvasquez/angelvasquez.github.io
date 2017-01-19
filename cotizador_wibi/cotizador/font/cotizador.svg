@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2017 by original authors @ fontello.com</metadata>
+<defs>
+<font id="cotizador" horiz-adv-x="1000" >
+<font-face font-family="cotizador" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="icono-demo" unicode="&#xe800;" d="M863 596c2 0 3-1 3-2v-459h-705v459c0 1 1 2 2 2h700m0 16h-700c-10 0-18-8-18-18v-474h736v474c0 10-8 18-18 18l0 0z m-36-51v-380h-627v380h627m8 8h-8-627-8v-8-380-8h8 627 8v8 380 8l0 0z m92-503h-828c-8 0-14 7-14 15v33c0 8 6 14 14 14h828c8 0 14-6 14-14v-33c0-8-6-15-14-15z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

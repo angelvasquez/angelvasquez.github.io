@@ -82,7 +82,6 @@ body {
 .box {
   height: 90vh;
   background: #fff;
-/*position relative*/
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -120,17 +119,29 @@ body {
 .box .marca {
   text-align: center;
 }
-.box .marca span {
-  outline: 1px solid #f00;
+.box .item {
+  padding: 10px;
+  border: 1px solid #efefef;
   width: 100%;
   display: block;
-  height: 100px;
+  color: #333;
+  height: auto;
+}
+.box .item.active {
+  border-color: #fff !important;
+  box-shadow: 0 0 5px #999;
+}
+.box .item i {
+  background: url("../cotizador/img/icono-demo.svg") no-repeat center top;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: auto;
 }
 .box .otra-marca {
   text-align: center;
-  display: inline-block;
-  width: 300px;
-  margin: 80px auto;
+/*display inline-block
+		margin 80px auto*/
 }
 .box .dropdown-toggle {
   font-size: 18px !important;
@@ -145,47 +156,48 @@ body {
   margin-top: 20px;
   display: block;
 }
+.box label {
+  color: #333;
+  margin-top: 40px;
+}
 .box#modelo strong {
   margin-top: 50px;
 }
 .box#valor .titulo:first-child {
   margin-bottom: 100px;
 }
-.box#usos .uso span {
-  text-align: center;
-  border: 1px solid #f00;
-  width: 100%;
+.box#usos .uso__personal .item i {
+  background: url("../cotizador/img/icono-demo.svg") no-repeat center top;
+  width: 80px;
+  height: 80px;
   display: block;
-  height: 100px;
-  color: #333;
+  margin: auto;
 }
-.box#laborales .laboral span {
-  text-align: center;
-  border: 1px solid #f00;
-  width: 100%;
-  display: block;
-  height: 100px;
-  color: #333;
-}
+.box#laborales .antecedente label,
 .box#antecedentes .antecedente label {
   color: #333;
   font-weight: 300;
   text-align: left;
 }
+.box#laborales .antecedente__independiente,
 .box#antecedentes .antecedente__independiente,
+.box#laborales .antecedente__empleo,
 .box#antecedentes .antecedente__empleo {
   display: none;
 }
-.box#entregas .entrega span {
-  text-align: center;
-  border: 1px solid #f00;
-  width: 100%;
-  display: block;
-  height: 100px;
-  color: #333;
-}
+.box#entregas label,
 .box#datos label {
   color: #333;
   font-weight: 300;
   text-align: left;
+}
+.seq-next,
+.seq-prev,
+.seq-finish {
+  padding: 10px 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.input-lg {
+  height: 40px;
 }
