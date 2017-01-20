@@ -1,6 +1,5 @@
 (function( $ ) {
 
-    new WOW().init();
 
     //Function to animate slider captions 
     function doAnimations( elems ) {
@@ -15,7 +14,31 @@
             });
         });
     }
-    
+
+    $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+    })
+
+
+    //active class for item elements
+    $('.item').each(function(elemIndex){
+        $(this).on("click", function(){
+            $('.item').each(function(elemIndex){
+                    $(this).removeClass("active");
+            });
+            $(this).addClass("active");
+        });
+    });
+
+
+    $('.seq-finish').on('click', function(){
+        $('.alert').fadeIn();
+    })
+
+    $('.seq-prev.last').on('click', function(){
+        $('.alert').fadeOut();
+    })
+        
     //Variables on page load 
     var $myCarousel = $('#carousel-example-generic'),
         $firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
@@ -37,10 +60,5 @@
     });
 
 
-    /* SCROLL SUAVE 
-    $('a[href^="#"]').click(function(e){
-        e.preventDefault();
-        $('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top-8}, 500);
-    });*/
     
 })(jQuery);

@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700';
 @import 'https://fonts.googleapis.com/css?family=Oswald:300,400';
+@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,8 @@
 body {
   font-family: 'Roboto Condensed', Arial !important;
   font-size: 16px;
-  color: #333;
+  color: #34495e !important;
+  background: #ecf0f1;
 }
 .main-container {
   padding: 0 !important;
@@ -81,11 +83,13 @@ body {
 /*COTIZADOR*/
 .box {
   height: 90vh;
-  background: #fff;
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 100%;
+}
+.box h2 {
+  color: #34495e;
 }
 .box h2 small {
   display: block;
@@ -94,10 +98,11 @@ body {
 .box label {
   width: 100%;
   display: block;
+  font-weight: 500;
+  color: #34495e;
+  margin-top: 40px;
 }
 .box .btn-container {
-/*position absolute
-		bottom 20px*/
   width: 100%;
 }
 .box .btn-container .btn {
@@ -108,7 +113,6 @@ body {
 .box .titulo {
   margin-bottom: 30px;
   text-align: center;
-  color: #333;
   margin-top: -50px;
 }
 .box .titulo h2 {
@@ -116,20 +120,35 @@ body {
   text-transform: uppercase;
   font-size: 24px !important;
 }
-.box .marca {
-  text-align: center;
-}
 .box .item {
-  padding: 10px;
-  border: 1px solid #efefef;
+  padding: 20px 0;
+  border-radius: 3px;
   width: 100%;
   display: block;
-  color: #333;
   height: auto;
+  text-align: center;
+  color: #34495e;
+  border: 1px solid #fff;
+  line-height: 100%;
 }
 .box .item.active {
-  border-color: #fff !important;
   box-shadow: 0 0 5px #999;
+  position: relative;
+  background: rgba(52,73,94,0.1);
+  border: 1px solid #efefef;
+}
+.box .item.active:after {
+  content: '\f120';
+  font-family: 'ionicons';
+  color: #e74c3c;
+  font-size: 24px;
+  display: block;
+  line-height: 170%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -5px;
+  right: 15px;
 }
 .box .item i {
   background: url("../cotizador/img/icono-demo.svg") no-repeat center top;
@@ -138,10 +157,11 @@ body {
   display: block;
   margin: auto;
 }
+.box#marcas .item {
+  background: #fff;
+}
 .box .otra-marca {
   text-align: center;
-/*display inline-block
-		margin 80px auto*/
 }
 .box .dropdown-toggle {
   font-size: 18px !important;
@@ -151,14 +171,13 @@ body {
   width: 100% !important;
 }
 .box strong {
-  color: #333;
   margin-bottom: 10px;
   margin-top: 20px;
   display: block;
 }
-.box label {
-  color: #333;
-  margin-top: 40px;
+.box .error {
+  color: #f00;
+  text-align: left;
 }
 .box#modelo strong {
   margin-top: 50px;
@@ -175,8 +194,6 @@ body {
 }
 .box#laborales .antecedente label,
 .box#antecedentes .antecedente label {
-  color: #333;
-  font-weight: 300;
   text-align: left;
 }
 .box#laborales .antecedente__independiente,
@@ -187,8 +204,6 @@ body {
 }
 .box#entregas label,
 .box#datos label {
-  color: #333;
-  font-weight: 300;
   text-align: left;
 }
 .seq-next,
@@ -197,7 +212,102 @@ body {
   padding: 10px 30px;
   margin-left: 10px;
   margin-right: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.seq-prev {
+  background: none;
+  color: #7f8c8d;
+}
+.seq-next {
+  background: #34495e;
+  color: #fff;
+}
+.seq-finish {
+  background: #2ecc71;
+  color: #fff;
 }
 .input-lg {
   height: 40px;
+}
+.alert {
+  padding: 0;
+  margin-bottom: 10px;
+  display: none;
+  background: #f39c12;
+  color: #fff;
+}
+.alert .icon {
+  font-size: 32px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+@media screen and (max-width: 380px) {
+  .box {
+    display: flex;
+    height: 80vh;
+/*height 630px*/
+  }
+  .box .titulo {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  .box .titulo h2 {
+    font-size: 20px !important;
+  }
+  .box label {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .box .input-lg {
+    height: 32px;
+  }
+  .box .item {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .box .item.active:after,
+  .box .item box-shadow 0 0 5px #999:after,
+  .box .item position relative:after {
+    font-size: 5px !important;
+  }
+  .box .uso,
+  .box .laboral,
+  .box .marca,
+  .box .entrega {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .box .laboral {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .box .btn {
+    padding: 2px 12px;
+  }
+  .box .filter-option {
+    font-size: 16px;
+    padding-top: 2px;
+  }
+  .box#modelo label {
+    margin-top: 30px;
+  }
+  .box#valor .titulo:first-child {
+    margin-bottom: 30px;
+  }
+  .box#datos .titulo {
+    margin-bottom: 0;
+  }
+  .box#datos .titulo small {
+    display: none;
+  }
+  .box#datos label {
+    font-size: 16px;
+  }
+  .box#antecedentes .antecedente label {
+    text-align: center;
+  }
+  .box#laborales .laboral .item {
+    height: 150px;
+  }
 }
