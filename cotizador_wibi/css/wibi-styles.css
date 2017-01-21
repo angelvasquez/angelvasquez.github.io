@@ -1,6 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700';
 @import 'https://fonts.googleapis.com/css?family=Oswald:300,400';
-@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
 * {
   margin: 0;
   padding: 0;
@@ -94,6 +93,9 @@ body {
 .box h2 small {
   display: block;
   text-transform: none;
+}
+.box h4 {
+  color: #34495e;
 }
 .box label {
   width: 100%;
