@@ -188,9 +188,26 @@ body {
   margin-bottom: 100px;
 }
 .box#usos .uso__personal .item i {
-  background: url("../cotizador/img/icono-demo.svg") no-repeat center top;
-  width: 80px;
-  height: 80px;
+  background: url("../cotizador/img/ico-personal.svg") no-repeat center top;
+  width: 120px;
+  display: block;
+  margin: auto;
+}
+.box#usos .uso__negocio .item i {
+  background: url("../cotizador/img/ico-negocio.svg") no-repeat center top;
+  width: 120px;
+  display: block;
+  margin: auto;
+}
+.box#usos .uso__taxi .item i {
+  background: url("../cotizador/img/ico-taxi.svg") no-repeat center top;
+  width: 120px;
+  display: block;
+  margin: auto;
+}
+.box#usos .uso__uber .item i {
+  background: url("../cotizador/img/ico-uber.svg") no-repeat center top;
+  width: 120px;
   display: block;
   margin: auto;
 }
