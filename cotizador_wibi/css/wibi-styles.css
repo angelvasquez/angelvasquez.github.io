@@ -189,43 +189,50 @@ body {
 }
 .box#usos .uso__personal .item i {
   background: url("../cotizador/img/ico-personal.svg") no-repeat center top;
-  width: 120px;
+  width: 150px;
+  height: 80px;
   display: block;
   margin: auto;
 }
 .box#usos .uso__negocio .item i {
   background: url("../cotizador/img/ico-negocio.svg") no-repeat center top;
-  width: 120px;
+  width: 150px;
+  height: 80px;
   display: block;
   margin: auto;
 }
 .box#usos .uso__taxi .item i {
   background: url("../cotizador/img/ico-taxi.svg") no-repeat center top;
-  width: 120px;
+  width: 150px;
+  height: 80px;
   display: block;
   margin: auto;
 }
 .box#usos .uso__uber .item i {
   background: url("../cotizador/img/ico-uber.svg") no-repeat center top;
-  width: 120px;
+  width: 150px;
+  height: 80px;
   display: block;
   margin: auto;
 }
 .box#laborales .laboral__empleo .item i {
   background: url("../cotizador/img/ico-empleo.svg") no-repeat center top;
-  width: 120px;
+  width: 150px;
+  height: 125px;
   display: block;
   margin: auto;
 }
 .box#laborales .laboral__independiente .item i {
   background: url("../cotizador/img/ico-independiente.svg") no-repeat center 1px;
-  width: 120px;
+  width: 150px;
+  height: 125px;
   display: block;
   margin: auto;
 }
 .box#laborales .laboral__jubilado .item i {
   background: url("../cotizador/img/ico-jubilado.svg") no-repeat center top;
-  width: 120px;
+  width: 150px;
+  height: 125px;
   display: block;
   margin: auto;
 }
@@ -236,7 +243,20 @@ body {
 .box#antecedentes .antecedente__empleo {
   display: none;
 }
-.box#entregas label,
+.box#entregas .entrega__despacho .item i {
+  background: url("../cotizador/img/ico-despacho-casa.svg") no-repeat center top;
+  width: 100%;
+  height: 125px;
+  display: block;
+  margin: auto;
+}
+.box#entregas .entrega__retiro .item i {
+  background: url("../cotizador/img/ico-retiro-tienda.svg") no-repeat center top;
+  width: 100%;
+  height: 125px;
+  display: block;
+  margin: auto;
+}
 .box#datos label {
   text-align: left;
 }
