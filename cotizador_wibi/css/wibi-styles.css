@@ -68,7 +68,7 @@ body {
 .main-container .carousel .carousel-caption h3 {
   animation-delay: 1.5s;
 }
-.main-container .carousel .carousel-caption button {
+.main-container .carousel .carousel-caption a {
   background-color: #09c;
   border-color: #00bfff;
   margin-top: 1em;
