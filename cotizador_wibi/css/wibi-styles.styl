@@ -12,6 +12,17 @@ body
 	color #34495e !important
 	background #ecf0f1
 
+.navbar
+	&-brand
+		background url('../cotizador/img/logo-wibi-solo.svg') no-repeat center center
+		width 60px
+		height 60px
+		margin-left 0px !important
+		display block
+		float none
+		
+	&-default
+		background #fff
 
 //CARROUSEL
 .main-container
@@ -21,9 +32,14 @@ body
   
 	.skyblue 
 		background-color #22c8ff
+		background url('https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/Z3SMOOURIA.jpg') no-repeat bottom center
+		background-size cover
+		
 
 	.deepskyblue 
 		background-color #00bfff
+		background url('https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/13ATLOFAF8.jpg') no-repeat bottom center
+		background-size cover
 
 	.darkerskyblue 
 		background-color #00a6dd
@@ -35,54 +51,34 @@ body
 		&.right,
 		&.left 
 			background-image none
+			width 10% !important
 
 	.carousel
 		height 100vh
 		.item 
 			height 100vh
 			width 100%
+			
 		.carousel-caption
-			bottom 50px
+			margin-bottom 20px
+			margin-left 0	!important
+			margin-right 0 !important
+			h3
+				background-color none
+			
+			h2
+				animation-delay 1s
 
 			h3
-				padding .5em
-				background-color #09c
+				animation-delay 1.5s
+				
 			button
 				background-color #09c
 				border-color #00bfff
 				margin-top 1em
-		.icon-container
-			background-color #09c
-			display inline-block
-			font-size 25px
-			line-height 25px
-			padding 1em
-			text-align center
-			border-radius 50%
-		 
-
-
-	/* Animation delays */
-	.carousel-caption h3:first-child 
-		animation-delay 1s
-
-	.carousel-caption h3:nth-child(2) 
-		animation-delay 2s
-
-	.carousel-caption button 
-		animation-delay 3s
-
-
-	h1
-		text-align content
-		margin-bottom 30px
-		font-size 30px
-		font-weight bold
-
-
-	.p
-		padding-top 125px
-		text-align center
+				animation-delay 2.3s
+				text-shadow none 
+				
 
 
 
@@ -122,9 +118,9 @@ body
 			margin-right 10px
 	
 	.titulo
-		margin-bottom 30px
+		/*margin-bottom 30px
+		margin-top -50px*/
 		text-align center
-		margin-top -50px
 		h2
 			margin-top 0
 			text-transform uppercase
@@ -195,7 +191,7 @@ body
 	&#valor
 		.titulo
 			&:first-child
-				margin-bottom 100px
+				margin-bottom 20px
 				
 
 	&#usos
@@ -386,31 +382,40 @@ body
 		&#modelo
 			label
 				margin-top 30px
-		
 		&#valor
 			.titulo
 					&:first-child
 						margin-bottom 30px
-		
 		&#datos
 			.titulo
 				margin-bottom 0
 				small
-					display none--
+					display none
 					margin-top 10px
 			label
 				font-size 16px
-		
-		
 		&#antecedentes
 			.antecedente
 				label
 					text-align center
-		
+		&#usos
+			.uso
+				.item
+					i
+						width 120px 
+						height 60px 
 		&#laborales
 			.laboral
 				.item
-					height 150px
+					i
+						width 120px 
+						height 80px
+		&#entregas
+			.entrega
+				.item
+					i
+						width 100%
+						height 70px
 					
 		
 		

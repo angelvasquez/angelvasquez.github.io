@@ -37,7 +37,9 @@ html,
 }
 
 .seq .seq-preloader {
-  background: #2980b9;
+  background: url(../img/wibi-negativo.svg) no-repeat center center #042EC6;
+  background-size: 200px;
+  ba
 }
 
 .seq .seq-pagination {
@@ -234,6 +236,7 @@ html,
 
 .seq.seq-active .seq-preloader .seq-preload-circle {
   fill: white;
+  display: none;
 }
 
 .seq.seq-active .seq-content {
