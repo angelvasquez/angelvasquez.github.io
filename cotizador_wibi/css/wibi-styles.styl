@@ -384,7 +384,119 @@ body
 		vertical-align middle
 		margin-right 10px
 	
+
+
+/*RESULTADO COTIZACION*/
+.resultado
+	position relative
+	z-index 1
+	&:before
+		background url('https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/M8DG5HC5SA.jpg') no-repeat center center
+		background-size cover
+		content: " ";
+		position: absolute;
+		top: 0; 
+		left: 0;
+		width: 100%; 
+		height: 120px;
+		opacity: .8; 
+		z-index: -1;
 		
+	.logo-resultado
+		background url('../cotizador/img/logo-wibi--negativo.svg') no-repeat center center
+		width 150px
+		height 150px
+		margin 30px auto 10px auto
+		position relative
+		z-index 2
+			
+		
+	.bajada
+		text-align center
+		p
+			animation-delay 0.5s
+	.info-resultado
+		display flex
+		flex-direction row
+	.columna
+		border-radius 3px
+		background rgba(255,255,255,.8)
+		overflow hidden
+		flex 1
+		height auto
+		margin-left 10px
+		margin-right 10px
+		margin-bottom 80px
+		animation-delay 1.5s
+		.datos-auto
+			p
+				font-size 20px
+				margin-top 20px
+				margin-bottom 0
+				text-align center
+				&:last-child
+					font-size 16px
+					margin-top 0
+					color #999
+	.plan
+		padding 20px
+		p
+			font-size 22px
+			color celeste
+			line-height 100%
+			span
+				
+				display block
+				font-size 13px
+				
+			small
+				font-size 13px
+				color #666
+				clear both
+				display block
+				margin-bottom 0
+	.titulo-plan
+		background celeste
+		color #fff
+		padding 10px 42px
+		text-align center
+		font-size 18px
+		display flex
+		height 60px
+		justify-content center
+		align-items center
+		line-height 120%
+		
+.tab-opciones
+	width 30%
+	margin 50px auto 30px auto
+	animation-delay 1s
+	
+	.tabs
+		display flex
+		list-style none
+		li
+			flex 1
+			text-align center
+			border 1px solid #ccc
+			&:first-child
+				border-radius 5px 0 0px 5px
+			&:last-child
+				border-radius 0 5px 5px 0
+			&.active
+				background celeste
+				color #fff
+				border 1px solid celeste
+				a
+					color #fff
+			a
+				display block
+				padding 8px 10px
+				&:hover,
+				&:focus
+					text-decoration none
+				
+	
 
 
 @media screen and (max-width : 380px)
