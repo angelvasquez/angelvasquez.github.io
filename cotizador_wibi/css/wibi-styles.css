@@ -376,8 +376,9 @@ body {
 .resultado .info-resultado {
   display: flex;
   flex-direction: row;
+  flex-flow: wrap;
 }
-.resultado .columna {
+.resultado .info-resultado .columna {
   border-radius: 3px;
   background: rgba(255,255,255,0.8);
   overflow: hidden;
@@ -388,13 +389,13 @@ body {
   margin-bottom: 80px;
   animation-delay: 1.5s;
 }
-.resultado .columna .datos-auto p {
+.resultado .info-resultado .columna .datos-auto p {
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 0;
   text-align: center;
 }
-.resultado .columna .datos-auto p:last-child {
+.resultado .info-resultado .columna .datos-auto p:last-child {
   font-size: 16px;
   margin-top: 0;
   color: #999;
@@ -543,5 +544,15 @@ body {
   .box#entregas .entrega .item i {
     width: 100%;
     height: 70px;
+  }
+  .resultado .tab-opciones {
+    width: 80%;
+  }
+  .resultado .info-resultado {
+    flex-direction: column;
+  }
+  .resultado .info-resultado .columna {
+    flex-flow: wrap;
+    margin-bottom: 10px;
   }
 }
