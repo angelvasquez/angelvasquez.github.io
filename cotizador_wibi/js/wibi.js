@@ -31,6 +31,34 @@
     });
 
 
+    //no-selected class for btn-select elements
+     $('.columna__plan ').each(function(elemIndex){
+        $(this).on("click", function(){
+            $('.columna__plan').each(function(elemIndex){
+                    $(this).addClass("no-selected");
+            });
+            $(this).removeClass("no-selected");
+
+            $('.tab-opciones').animate({
+                opacity: 0,
+                height: 0
+            });
+
+            $('.congrats').animate({
+                opacity: 1,
+                height: '120px'
+            });
+
+            $('.bajada').animate({
+                opacity: 0,
+                height: 0
+            });
+
+           
+        });
+    });
+
+
     $('.seq-finish').on('click', function(){
         $('.alert').fadeIn();
     })
